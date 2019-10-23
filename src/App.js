@@ -1,25 +1,38 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Home from './components/Home';
+import './Css/Portfolio.css';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import imagePort from './images/imagePort.jpg';
+import Github from './components/Github';
+import PortfolioNav from './components/PortfolioNav';
+import Projects from './components/Projects';
+import Contact from './components/Contact';
+import MediaQuery from 'react-responsive';
+import Skills from './components/Skills';
+import Tablet from './images/Tablet.jpg';
+import NavbarMobile from './components/NavbarMobile';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <MediaQuery maxDeviceWidth={768}>
+        <img src={Tablet} alt='Tablet' />
+        <NavbarMobile />
+      </MediaQuery>
+      <MediaQuery minDeviceWidth={1024} maxDeviceWidth={2560}>
+        <img src={imagePort} alt='Main Background' />
+        <PortfolioNav />
+      </MediaQuery>
+      <div className='App'>
+        <Switch>
+          <Route path='/' component={Home} exact />
+          <Route path='/Github' component={Github} />
+          <Route path='/Projects' component={Projects} />
+          <Route path='/Contact' component={Contact} />
+          <Route path='/Skills' component={Skills} />
+        </Switch>
+      </div>
+    </BrowserRouter>
   );
 }
 
