@@ -12,7 +12,7 @@ const Projects = ({ CheckNav }) => {
   const openWindow = url => {
     window.open(url);
   };
-  const navPosition = CheckNav
+  const navPosition = !CheckNav
     ? 'Mobile-Details-content'
     : 'Mobile-Details-content-Close';
   return (

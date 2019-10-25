@@ -6,7 +6,7 @@ import Toast from 'react-bootstrap/Toast';
 // Redux
 import { connect } from 'react-redux';
 const Skills = ({ CheckNav }) => {
-  const navPosition = CheckNav
+  const navPosition = !CheckNav
     ? 'Mobile-Details-content'
     : 'Mobile-Details-content-Close';
   return (
