@@ -7,7 +7,6 @@ import Typing from 'react-typing-animation';
 import { connect } from 'react-redux';
 
 const Contact = ({ CheckNav }) => {
-  console.log(CheckNav);
   const onClick = url => {
     window.open(url);
   };
