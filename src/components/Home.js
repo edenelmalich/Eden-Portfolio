@@ -4,7 +4,7 @@ import Typing from 'react-typing-animation';
 // Redux
 import { connect } from 'react-redux';
 const Home = ({ CheckNav }) => {
-  const navPosition = !CheckNav
+  const navPosition = CheckNav
     ? 'Mobile-Details-content-Close'
     : 'Mobile-Details-content';
   return (

@@ -7,7 +7,7 @@ import { CheckNavbar } from '../action/NavAction';
 const NavbarMobile = ({ checkNavbar, CheckNav }) => {
   return (
     <div className='NavMobile'>
-      <Navbar onClick={() => checkNavbar(CheckNav)} bg='light' expand='lg'>
+      <Navbar onClick={() => checkNavbar(!CheckNav)} bg='light' expand='lg'>
         <Navbar.Brand href='/'>Eden Elmalich</Navbar.Brand>
         <Navbar.Toggle aria-controls='basic-navbar-nav' />
         <Navbar.Collapse id='basic-navbar-nav'>
