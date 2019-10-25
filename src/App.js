@@ -1,6 +1,7 @@
 import React from 'react';
 import Home from './components/Home';
 import './Css/Portfolio.css';
+import './Css/Mobile.css';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import imagePort from './images/imagePort.jpg';
 import Github from './components/Github';
@@ -9,17 +10,15 @@ import Projects from './components/Projects';
 import Contact from './components/Contact';
 import MediaQuery from 'react-responsive';
 import Skills from './components/Skills';
-import Tablet from './images/Tablet.jpg';
 import NavbarMobile from './components/NavbarMobile';
 
 function App() {
   return (
     <BrowserRouter>
-      <MediaQuery maxDeviceWidth={768}>
-        <img src={Tablet} alt='Tablet' />
+      <MediaQuery maxDeviceWidth={1024}>
         <NavbarMobile />
       </MediaQuery>
-      <MediaQuery minDeviceWidth={1024} maxDeviceWidth={2560}>
+      <MediaQuery minDeviceWidth={1280} maxDeviceWidth={2560}>
         <img src={imagePort} alt='Main Background' />
         <PortfolioNav />
       </MediaQuery>
