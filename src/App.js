@@ -1,6 +1,7 @@
 import React from 'react';
 import Home from './components/Home';
 import './Css/Portfolio.css';
+import './Css/Mobile.css';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import imagePort from './images/imagePort.jpg';
 import Github from './components/Github';

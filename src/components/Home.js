@@ -1,7 +1,6 @@
 import React from 'react';
 import MediaQuery from 'react-responsive';
 import Typing from 'react-typing-animation';
-import '../Css/Mobile.css';
 
 const Home = () => {
   return (
