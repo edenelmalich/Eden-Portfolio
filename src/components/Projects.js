@@ -6,6 +6,7 @@ import maxfit from '../images/maxfit.png';
 import portfolio from '../images/portfolio.png';
 import { Card, Button } from 'react-bootstrap';
 import imagebrowser from '../images/imagebrowser.png';
+import Footer from './Footer';
 
 const Projects = () => {
   const openWindow = url => {
@@ -15,84 +16,70 @@ const Projects = () => {
   return (
     <Fragment>
       <MediaQuery minDeviceWidth={320} maxDeviceWidth={1024}>
-        <div className='Mobile-Container'>
-          <div className='Mobile-profile-content'>
-            <div className='Mobile-profile'>
-              <div className='Mobile-Header'>Projects</div>
-              <div className='Main-Padding'></div>
-              <div className='Mobile-job'>
-                You Should check out My projects.
-              </div>
-            </div>
-          </div>
-          <div>
-            <div className='Mobile-Text-Content '>
-              <div className='Sub-Header '>Projects</div>
-              <div className='Mobile-Details'>
-                <div className='Project-box'>
-                  <Card bg='light' className='Card-width'>
-                    <Card.Header>Maxfit</Card.Header>
-                    <Card.Body>
-                      <Card.Title>Gym management</Card.Title>
-                      <Card.Text>
-                        Gym management software will Allow gym owners to get
-                        relevant Information about the trainers and Take actions
-                        like building a workout Plan.
-                        <button
-                          type='button'
-                          className='btn btn-outline-dark'
-                          onClick={() =>
-                            openWindow(
-                              'https://github.com/edenelmalich/FinalProject-Server-side'
-                            )
-                          }
-                        >
-                          <label> View Final Project</label>
-                        </button>
-                      </Card.Text>
-                    </Card.Body>
-                  </Card>
-                  <div className='Main-Padding'></div>
-                  <img src={maxfit} className='image' alt='Maxfit Project' />
-                </div>
-                <div className='Main-Padding'></div>
-                <div className='Project-box'>
-                  <Card bg='light' className='Card-width '>
-                    <Card.Header>imageBrowser</Card.Header>
-                    <Card.Body>
-                      <Card.Title>Image search site</Card.Title>
-                      <Card.Text>
-                        A site for image search that uses Flicker api Uses
-                        languages: Vue.js Typescript.
-                        <button
-                          type='button'
-                          className='btn btn-outline-dark'
-                          onClick={() =>
-                            openWindow(
-                              'https://elastic-mcclintock-ef7508.netlify.com/'
-                            )
-                          }
-                        >
-                          <label>View Image Browser Project</label>
-                        </button>
-                      </Card.Text>
-                    </Card.Body>
-                  </Card>
-                  <div className='Main-Padding'></div>
-                  <img
-                    src={imagebrowser}
-                    className='image'
-                    alt='imageBrowser Project'
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <header className='Mobile-profile-content'>
+          <div className='Mobile-profile'>
+            <div className='Mobile-Header'>Projects</div>
 
-        <footer className='app-footer'>
-          <div>&copy; 2019 Eden Elmalich</div>
-        </footer>
+            <div className='Main-Padding'></div>
+            <div className='Mobile-job'>You Should check out My projects.</div>
+          </div>
+        </header>
+        <main className='Mobile-Details-content'>
+          <div className='Sub-Header '>My projects</div>
+          <div className='Mobile-Details'>
+            <div className='Project-box'>
+              <Card bg='light' className='Card-width'>
+                <Card.Header>Maxfit</Card.Header>
+                <Card.Body>
+                  <Card.Title>Gym management</Card.Title>
+                  <Card.Text>
+                    Gym management software will Allow gym owners to get
+                    relevant Information about the trainers and Take actions
+                    like building a workout Plan.
+                  </Card.Text>
+                </Card.Body>
+              </Card>
+              <div className='Main-Padding'></div>
+              <img src={maxfit} className='image' alt='Maxfit Project' />
+            </div>
+            <div className='Box-padding '></div>
+            <div className='Project-box'>
+              <Card bg='light' className='Card-width '>
+                <Card.Header>imageBrowser</Card.Header>
+                <Card.Body>
+                  <Card.Title>Image search site</Card.Title>
+                  <Card.Text>
+                    A site for image search that uses Flicker api Uses
+                    languages: Vue.js Typescript.
+                  </Card.Text>
+                </Card.Body>
+              </Card>
+              <div className='Main-Padding'></div>
+              <img
+                src={imagebrowser}
+                className='image'
+                alt='imageBrowser Project'
+              />
+            </div>
+            <div className='Main-Padding'></div>
+            <div className='Project-box'>
+              <Card bg='light' className='Card-width '>
+                <Card.Header>Portfolio</Card.Header>
+                <Card.Body>
+                  <Card.Title>My portfolio</Card.Title>
+                  <Card.Text>
+                    My project portfolio is optimized for computer screens.
+                    languages: React.js, Css3, Html.
+                  </Card.Text>
+                </Card.Body>
+              </Card>
+              <div className='Main-Padding'></div>
+              <img src={portfolio} className='image' alt='portfolio Project' />
+            </div>
+          </div>
+        </main>
+
+        <Footer />
       </MediaQuery>
       <MediaQuery minDeviceWidth={1280} maxDeviceWidth={2560}>
         <div className='Page-Container'>
