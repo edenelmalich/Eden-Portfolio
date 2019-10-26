@@ -88,6 +88,9 @@ const Contact = ({ CheckNav }) => {
             </Typing>
           </div>
         </div>
+        <footer className='App-footer'>
+          <div>&copy; 2019 Eden Elmalich</div>
+        </footer>
       </MediaQuery>
     </Fragment>
   );

@@ -1,49 +1,38 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import MediaQuery from 'react-responsive';
 import Typing from 'react-typing-animation';
-// Redux
-import { connect } from 'react-redux';
-const Home = ({ CheckNav }) => {
-  const navPosition = CheckNav
-    ? 'Mobile-Details-content-Close'
-    : 'Mobile-Details-content';
+import '../Css/Mobile.css';
+
+const Home = () => {
   return (
-    <Fragment>
+    <div className='Home'>
       <MediaQuery minDeviceWidth={320} maxDeviceWidth={1024}>
-        <div className='Mobile-Container'>
-          <div className='Mobile-profile-content'>
-            <div className='Mobile-profile'>
-              <div className='Mobile-Header'>Eden Elmalich</div>
-              <div className='Mobile-position'>Junior Full Stack</div>
-              <div className='Main-Padding'></div>
-              <div className='Mobile-job'>
-                Practical software engineer is looking for a junior Full-Stack
-                to gain experience in the field.
-              </div>
+        <header className='Mobile-profile-content'>
+          <div className='Mobile-profile'>
+            <div className='Mobile-Header'>Eden Elmalich</div>
+            <div className='Mobile-position'>Junior Full Stack</div>
+            <div className='Main-Padding'></div>
+            <div className='Mobile-job'>
+              Practical software engineer is looking for a junior Full-Stack to
+              gain experience in the field.
             </div>
           </div>
-          <div className={navPosition}>
-            <div className='Mobile-Text-Content '>
-              <div className='Sub-Header '>About me</div>
-              <div className='Mobile-Details'>
-                <Typing>
-                  Practical software engineer with high self-learning abilities
-                  with development experience in React.js, Redux.js Node.js,
-                  Express.js Css3, Html, JavaScript. Proven experience in
-                  routine work under stress conditions while looking at the
-                  small details. Also, creating team work interfaces to achieve
-                  goals and objectives set by management. Decisive, determined
-                  to achieve the goal with great motivation to learn new fields
-                  and succeed by implementing My studies.
-                </Typing>
-              </div>
-            </div>
+        </header>
+        <main className='Mobile-Details-content'>
+          <div className='Sub-Header '>About me</div>
+          <div className='Mobile-Details'>
+            Practical software engineer with high self-learning abilities with
+            development experience in React.js, Redux.js Node.js, Express.js
+            Css3, Html, JavaScript. Proven experience in routine work under
+            stress conditions while looking at the small details. Also, creating
+            team work interfaces to achieve goals and objectives set by
+            management. Decisive, determined to achieve the goal with great
+            motivation to learn new fields and succeed by implementing My
+            studies.
           </div>
-          <footer className='app-footer'>
-            <div>&copy; 2019 Eden Elmalich</div>
-          </footer>
-        </div>
+        </main>
       </MediaQuery>
+
       <MediaQuery minDeviceWidth={1280} maxDeviceWidth={2560}>
         <div className='Page-Container'>
           <div className='Portfolio-Container'>
@@ -73,11 +62,12 @@ const Home = ({ CheckNav }) => {
             </div>
           </div>
         </div>
+        <footer className='App-footer'>
+          <div>&copy; 2019 Eden Elmalich</div>
+        </footer>
       </MediaQuery>
-    </Fragment>
+    </div>
   );
 };
-const mapStateToProps = state => ({
-  CheckNav: state.NavReducer.CheckNav
-});
-export default connect(mapStateToProps)(Home);
+
+export default Home;
