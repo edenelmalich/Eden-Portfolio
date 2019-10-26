@@ -17,7 +17,7 @@ const Github = () => {
               <div className='Mobile-Header'>Github</div>
               <div className='Main-Padding'></div>
               <div className='Mobile-job'>
-                I'd love to have a look at my projects at github.
+                I would love to have you look at my projects in github.
               </div>
             </div>
           </div>
@@ -72,7 +72,7 @@ const Github = () => {
           <div className='Portfolio-Container'>
             <div className='Portfolio-Header'>Github</div>
             <div id='Port-Position' className='Portfolio-Header'>
-              I'd love to have a look at my projects at github.
+              I would love to have you look at my projects in github.
             </div>
           </div>
           <div className='Portfolio-Content'>
