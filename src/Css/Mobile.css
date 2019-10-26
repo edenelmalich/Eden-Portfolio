@@ -13,7 +13,7 @@ body {
 .Mobile-profile-content {
     padding-left: 2rem;
     padding-right: 2rem;
-    background: #6e6e6e;
+    background: #484848;
     box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.8);
 }
 
@@ -47,13 +47,13 @@ body {
 
 .Sub-Header {
     color: #6e6e6e;
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 600;
 }
 
 .Mobile-Details {
     color: #6e6e6e;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 
@@ -81,15 +81,27 @@ body {
 }
 
 .Mobile-footer {
-    position: absolute;
     left: 0;
     bottom: 0;
     height: 20px;
     padding-top: 10px;
-    padding-bottom: 0;
+    padding-bottom: 10px;
+    font-size: 1rem;
     width: 100%;
     color: #aaa;
 }
+
+.Footer-top {
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-top-color: rgba(0, 0, 0, .125);
+}
+
+.Footer-Padding {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
 
 @media only screen and (max-width:425px) {
     .Card-width {

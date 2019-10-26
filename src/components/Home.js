@@ -1,6 +1,7 @@
 import React from 'react';
 import MediaQuery from 'react-responsive';
 import Typing from 'react-typing-animation';
+import Footer from './Footer';
 
 const Home = () => {
   return (
@@ -30,6 +31,7 @@ const Home = () => {
             studies.
           </div>
         </main>
+        <Footer />
       </MediaQuery>
 
       <MediaQuery minDeviceWidth={1280} maxDeviceWidth={2560}>

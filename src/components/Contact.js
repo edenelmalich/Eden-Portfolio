@@ -4,16 +4,11 @@ import MediaQuery from 'react-responsive';
 import Typing from 'react-typing-animation';
 import { Card, Button } from 'react-bootstrap';
 
-// Redux
-import { connect } from 'react-redux';
-
-const Contact = ({ CheckNav }) => {
+const Contact = () => {
   const onClick = url => {
     window.open(url);
   };
-  const navPosition = CheckNav
-    ? 'Mobile-Details-content'
-    : 'Mobile-Details-content-Close';
+
   return (
     <Fragment>
       <MediaQuery minDeviceWidth={320} maxDeviceWidth={1024}>
@@ -27,7 +22,7 @@ const Contact = ({ CheckNav }) => {
               </div>
             </div>
           </div>
-          <div className={navPosition}>
+          <div>
             <div className='Mobile-Text-Content '>
               <div className='Sub-Header '>Contact me</div>
               <div className='Mobile-Details'>
@@ -95,7 +90,5 @@ const Contact = ({ CheckNav }) => {
     </Fragment>
   );
 };
-const mapStateToProps = state => ({
-  CheckNav: state.NavReducer.CheckNav
-});
-export default connect(mapStateToProps)(Contact);
+
+export default Contact;

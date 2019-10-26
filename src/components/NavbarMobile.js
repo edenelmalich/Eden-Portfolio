@@ -2,12 +2,11 @@ import React from 'react';
 import '../Css/Mobile.css';
 import { Navbar, Nav } from 'react-bootstrap';
 // Redux
-import { connect } from 'react-redux';
-import { CheckNavbar } from '../action/NavAction';
-const NavbarMobile = ({ checkNavbar, CheckNav }) => {
+
+const NavbarMobile = () => {
   return (
     <div className='NavMobile'>
-      <Navbar onClick={() => checkNavbar(!CheckNav)} bg='light' expand='lg'>
+      <Navbar bg='light' expand='lg'>
         <Navbar.Brand href='/'>Eden Elmalich</Navbar.Brand>
         <Navbar.Toggle aria-controls='basic-navbar-nav' />
         <Navbar.Collapse id='basic-navbar-nav'>
@@ -23,20 +22,5 @@ const NavbarMobile = ({ checkNavbar, CheckNav }) => {
     </div>
   );
 };
-const mapStateToProps = state => {
-  return {
-    CheckNav: state.NavReducer.CheckNav
-  };
-};
-const mapDispatchToProps = dispatch => {
-  return {
-    checkNavbar: boolean => {
-      dispatch(CheckNavbar(boolean));
-    }
-  };
-};
 
-export default connect(
-  mapStateToProps,
-  mapDispatchToProps
-)(NavbarMobile);
+export default NavbarMobile;

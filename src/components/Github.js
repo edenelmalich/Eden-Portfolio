@@ -3,15 +3,10 @@ import MediaQuery from 'react-responsive';
 import Typing from 'react-typing-animation';
 import { Card, Button } from 'react-bootstrap';
 
-// Redux
-import { connect } from 'react-redux';
-const Github = ({ CheckNav }) => {
+const Github = () => {
   const onClick = url => {
     window.open(url);
   };
-  const navPosition = CheckNav
-    ? 'Mobile-Details-content'
-    : 'Mobile-Details-content-Close';
 
   return (
     <Fragment>
@@ -26,7 +21,7 @@ const Github = ({ CheckNav }) => {
               </div>
             </div>
           </div>
-          <div className={navPosition}>
+          <div>
             <div className='Mobile-Text-Content '>
               <div className='Sub-Header '>Projects in github</div>
               <div className='Mobile-Details'>
@@ -131,7 +126,5 @@ const Github = ({ CheckNav }) => {
     </Fragment>
   );
 };
-const mapStateToProps = state => ({
-  CheckNav: state.NavReducer.CheckNav
-});
-export default connect(mapStateToProps)(Github);
+
+export default Github;

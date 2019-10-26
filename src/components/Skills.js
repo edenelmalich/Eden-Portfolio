@@ -4,11 +4,8 @@ import Typing from 'react-typing-animation';
 
 import Toast from 'react-bootstrap/Toast';
 // Redux
-import { connect } from 'react-redux';
-const Skills = ({ CheckNav }) => {
-  const navPosition = CheckNav
-    ? 'Mobile-Details-content'
-    : 'Mobile-Details-content-Close';
+
+const Skills = () => {
   return (
     <Fragment>
       <MediaQuery minDeviceWidth={320} maxDeviceWidth={1024}>
@@ -23,7 +20,7 @@ const Skills = ({ CheckNav }) => {
               </div>
             </div>
           </div>
-          <div className={navPosition}>
+          <div>
             <div className='Mobile-Text-Content '>
               <div className='Sub-Header '>My skills</div>
               <div className='Mobile-Details'>
@@ -159,7 +156,5 @@ const Skills = ({ CheckNav }) => {
     </Fragment>
   );
 };
-const mapStateToProps = state => ({
-  CheckNav: state.NavReducer.CheckNav
-});
-export default connect(mapStateToProps)(Skills);
+
+export default Skills;

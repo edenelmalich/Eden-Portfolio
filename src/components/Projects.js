@@ -6,16 +6,12 @@ import maxfit from '../images/maxfit.png';
 import portfolio from '../images/portfolio.png';
 import { Card, Button } from 'react-bootstrap';
 import imagebrowser from '../images/imagebrowser.png';
-// Redux
-import { connect } from 'react-redux';
 
-const Projects = ({ CheckNav }) => {
+const Projects = () => {
   const openWindow = url => {
     window.open(url);
   };
-  const navPosition = CheckNav
-    ? 'Mobile-Details-content'
-    : 'Mobile-Details-content-Close';
+
   return (
     <Fragment>
       <MediaQuery minDeviceWidth={320} maxDeviceWidth={1024}>
@@ -29,7 +25,7 @@ const Projects = ({ CheckNav }) => {
               </div>
             </div>
           </div>
-          <div className={navPosition}>
+          <div>
             <div className='Mobile-Text-Content '>
               <div className='Sub-Header '>Projects</div>
               <div className='Mobile-Details'>
@@ -214,7 +210,5 @@ const Projects = ({ CheckNav }) => {
     </Fragment>
   );
 };
-const mapStateToProps = state => ({
-  CheckNav: state.NavReducer.CheckNav
-});
-export default connect(mapStateToProps)(Projects);
+
+export default Projects;
