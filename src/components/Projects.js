@@ -3,7 +3,8 @@ import MediaQuery from 'react-responsive';
 import Typing from 'react-typing-animation';
 import '../Css/Portfolio.css';
 import maxfit from '../images/maxfit.png';
-import Card from 'react-bootstrap/Card';
+import portfolio from '../images/portfolio.png';
+import { Card, Button } from 'react-bootstrap';
 import imagebrowser from '../images/imagebrowser.png';
 // Redux
 import { connect } from 'react-redux';
@@ -119,9 +120,8 @@ const Projects = ({ CheckNav }) => {
                 </Card>
                 <div className='Main-Padding'></div>
                 <img src={maxfit} className='image' alt='Maxfit Project' />
-
-                <div className='Main-Padding'></div>
               </div>
+              <div className='Box-padding '></div>
               <div className='Project-box'>
                 <Card bg='light' className='Card-width '>
                   <Card.Header>imageBrowser</Card.Header>
@@ -140,33 +140,70 @@ const Projects = ({ CheckNav }) => {
                   alt='imageBrowser Project'
                 />
               </div>
+              <div className='Main-Padding'></div>
+              <div className='Project-box'>
+                <Card bg='light' className='Card-width '>
+                  <Card.Header>Portfolio</Card.Header>
+                  <Card.Body>
+                    <Card.Title>My portfolio</Card.Title>
+                    <Card.Text>
+                      My project portfolio is optimized for computer screens.
+                      languages: React.js, Css3, Html.
+                    </Card.Text>
+                  </Card.Body>
+                </Card>
+                <div className='Main-Padding'></div>
+                <img
+                  src={portfolio}
+                  className='image'
+                  alt='portfolio Project'
+                />
+              </div>
             </div>
           </div>
           <div className='Portfolio-Content'>
             <Typing className='Typist-Att'>
-              <li>Image Browser:</li>
-              <button
-                type='button'
-                className='btn btn-outline-dark'
-                onClick={() =>
-                  openWindow('https://elastic-mcclintock-ef7508.netlify.com/')
-                }
-              >
-                <label>View Image Browser Project</label>
-              </button>
-              <div className='Main-Padding'></div>
-              <li>Final Project</li>
-              <button
-                type='button'
-                className='btn btn-outline-dark'
-                onClick={() =>
-                  openWindow(
-                    'https://github.com/edenelmalich/FinalProject-Server-side'
-                  )
-                }
-              >
-                <label> View Final Project</label>
-              </button>
+              <Card bg='light' className='Main-Card-width'>
+                <Card.Header>View my projects</Card.Header>
+                <Card.Body>
+                  <Card.Text>
+                    <Button
+                      variant='light'
+                      onClick={() =>
+                        openWindow(
+                          'https://elastic-mcclintock-ef7508.netlify.com/'
+                        )
+                      }
+                    >
+                      Image Browser
+                    </Button>
+                  </Card.Text>
+                  <Card.Text>
+                    <Button
+                      variant='light'
+                      onClick={() =>
+                        openWindow(
+                          'https://github.com/edenelmalich/FinalProject-Server-side'
+                        )
+                      }
+                    >
+                      Final Project
+                    </Button>
+                  </Card.Text>
+                  <Card.Text>
+                    <Button
+                      variant='light'
+                      onClick={() =>
+                        openWindow(
+                          'https://mysterious-hamlet-41297.herokuapp.com/'
+                        )
+                      }
+                    >
+                      Portfolio
+                    </Button>
+                  </Card.Text>
+                </Card.Body>
+              </Card>
             </Typing>
           </div>
         </div>

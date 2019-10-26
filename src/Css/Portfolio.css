@@ -34,7 +34,7 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 285px;
+    height: 290px;
     width: 40%;
     left: 30%;
     top: 30%;
@@ -79,9 +79,17 @@ img {
     width: 18.7rem;
 }
 
+.Main-Card-width {
+    width: 32rem;
+}
+
 .Home-Text {
     padding-right: 25px;
     padding-left: 25px;
+}
+
+label {
+    font-size: 10px;
 }
 
 /* Attributes for Skills page */
@@ -95,11 +103,15 @@ img {
     padding-right: 15px;
 }
 
-.Skills-Flex {
+.Main-Flex {
     display: flex;
     flex-wrap: wrap;
     margin-right: auto;
     margin-left: auto;
+}
+
+.btn {
+    padding: 0;
 }
 
 .toast:not(:last-child) {
@@ -114,7 +126,7 @@ img {
 
 .Typist-Att {
     position: relative;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 600;
     text-align: center;
 }
@@ -173,7 +185,11 @@ a:not([href]):not([tabindex]) {
 }
 
 .Project-box {
-    height: 430px;
+    height: 365px;
+}
+
+.Box-padding {
+    padding-bottom: 4rem;
 }
 
 .image {
@@ -199,7 +215,7 @@ a:not([href]):not([tabindex]) {
 @media only screen and (width: 1280px) {
 
     .Portfolio-Content {
-        height: 305px;
+        height: 310px;
         padding-left: 35px;
         padding-top: 5px;
 
@@ -212,12 +228,20 @@ a:not([href]):not([tabindex]) {
     .Typist-Att {
         font-size: 16px;
     }
+
+    .Main-Card-width {
+        width: 26rem;
+    }
 }
 
 @media only screen and (width: 1366px) {
     .Portfolio-Content {
-        height: 290px;
+        height: 300px;
         padding-left: 35px;
+    }
+
+    .Main-Card-width {
+        width: 28rem;
     }
 
 
@@ -226,15 +250,19 @@ a:not([href]):not([tabindex]) {
 /* Att For Screen Size 1440px */
 @media only screen and (width: 1440px) {
     .Portfolio-Content {
-        height: 350px;
+        height: 360px;
         padding-top: 15px;
+    }
+
+    .Main-Card-width {
+        width: 30rem;
     }
 
 }
 
 @media only screen and (width: 1600px) {
     .Portfolio-Content {
-        height: 330px;
+        height: 340px;
         padding-top: 15px;
     }
 
@@ -245,6 +273,10 @@ a:not([href]):not([tabindex]) {
 
     a {
         font-size: 28px;
+    }
+
+    .Main-Card-width {
+        width: 34rem;
     }
 
 }
@@ -281,10 +313,6 @@ a:not([href]):not([tabindex]) {
         height: 200px;
     }
 
-    .card {
-        width: 20rem;
-    }
-
     .Project-box {
         height: 430px;
 
@@ -296,6 +324,10 @@ a:not([href]):not([tabindex]) {
 
     .Typist-Att {
         font-size: 24px;
+    }
+
+    .Main-Card-width {
+        width: 40rem;
     }
 
     .Job-Text {

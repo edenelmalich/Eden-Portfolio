@@ -28,7 +28,7 @@ const Skills = ({ CheckNav }) => {
               <div className='Sub-Header '>My skills</div>
               <div className='Mobile-Details'>
                 <div className='Typist-Att'>
-                  <div className='Skills-Flex'>
+                  <div className='Main-Flex'>
                     <Toast>
                       <Toast.Body>React.js.</Toast.Body>
                     </Toast>
@@ -98,7 +98,7 @@ const Skills = ({ CheckNav }) => {
           <div className='Portfolio-Content'>
             <div className='Skills-Padding'>
               <Typing className='Typist-Att'>
-                <div className='Skills-Flex'>
+                <div className='Main-Flex'>
                   <Toast>
                     <Toast.Body>React.js.</Toast.Body>
                   </Toast>

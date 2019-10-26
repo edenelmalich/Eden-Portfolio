@@ -1,6 +1,8 @@
 import React, { Fragment } from 'react';
 import MediaQuery from 'react-responsive';
 import Typing from 'react-typing-animation';
+import { Card, Button } from 'react-bootstrap';
+
 // Redux
 import { connect } from 'react-redux';
 const Github = ({ CheckNav }) => {
@@ -10,6 +12,7 @@ const Github = ({ CheckNav }) => {
   const navPosition = CheckNav
     ? 'Mobile-Details-content'
     : 'Mobile-Details-content-Close';
+
   return (
     <Fragment>
       <MediaQuery minDeviceWidth={320} maxDeviceWidth={1024}>
@@ -79,29 +82,45 @@ const Github = ({ CheckNav }) => {
           </div>
           <div className='Portfolio-Content'>
             <Typing className='Typist-Att'>
-              <li>Image Browser:</li>
-              <button
-                type='button'
-                className='btn btn-outline-dark'
-                onClick={() =>
-                  onClick('https://github.com/edenelmalich/image-Browser')
-                }
-              >
-                <label>View Image Browser on Github</label>
-              </button>
-              <div className='Main-Padding'></div>
-              <li>Final Project:</li>
-              <button
-                type='button'
-                className='btn btn-outline-dark'
-                onClick={() =>
-                  onClick(
-                    'https://github.com/edenelmalich/FinalProject-Server-side'
-                  )
-                }
-              >
-                <label> View Final Project on Github</label>
-              </button>
+              <Card bg='light' className='Main-Card-width'>
+                <Card.Header>Projects on github</Card.Header>
+                <Card.Body>
+                  <Card.Text>
+                    <Button
+                      variant='light'
+                      onClick={() =>
+                        onClick('https://github.com/edenelmalich/image-Browser')
+                      }
+                    >
+                      Image Browser
+                    </Button>
+                  </Card.Text>
+                  <Card.Text>
+                    <Button
+                      variant='light'
+                      onClick={() =>
+                        onClick(
+                          'https://github.com/edenelmalich/FinalProject-Server-side'
+                        )
+                      }
+                    >
+                      Final Project
+                    </Button>
+                  </Card.Text>
+                  <Card.Text>
+                    <Button
+                      variant='light'
+                      onClick={() =>
+                        onClick(
+                          'https://github.com/edenelmalich/eden-portfolio'
+                        )
+                      }
+                    >
+                      Portfolio
+                    </Button>
+                  </Card.Text>
+                </Card.Body>
+              </Card>
             </Typing>
           </div>
         </div>

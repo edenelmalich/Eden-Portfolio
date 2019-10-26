@@ -2,6 +2,7 @@ import React, { Fragment } from 'react';
 import '../Css/Portfolio.css';
 import MediaQuery from 'react-responsive';
 import Typing from 'react-typing-animation';
+import { Card, Button } from 'react-bootstrap';
 
 // Redux
 import { connect } from 'react-redux';
@@ -64,21 +65,26 @@ const Contact = ({ CheckNav }) => {
           </div>
           <div className='Portfolio-Content'>
             <Typing className='Typist-Att'>
-              <li>Name: Eden Elmalich.</li>
-              <li>Phone: 0543241787.</li>
-              <li> Email: eelmalich2@gmail.com.</li>
-              <li>Profile in Linkedin.</li>
-              <button
-                type='button'
-                className='btn btn-outline-dark'
-                onClick={() =>
-                  onClick(
-                    'https://www.linkedin.com/in/eden-elmalich-6ba820192/'
-                  )
-                }
-              >
-                <label>View Profile in Linkedin</label>
-              </button>
+              <Card bg='light' className='Main-Card-width'>
+                <Card.Header>Contact me</Card.Header>
+                <Card.Body>
+                  <Card.Text>Name: Eden Elmalich.</Card.Text>
+                  <Card.Text>Phone: 0543241787.</Card.Text>
+                  <Card.Text>Email: eelmalich2@gmail.com</Card.Text>
+                  <Card.Text>
+                    <Button
+                      variant='light'
+                      onClick={() =>
+                        onClick(
+                          'https://www.linkedin.com/in/eden-elmalich-6ba820192/'
+                        )
+                      }
+                    >
+                      Linkedin Profile
+                    </Button>
+                  </Card.Text>
+                </Card.Body>
+              </Card>
             </Typing>
           </div>
         </div>
