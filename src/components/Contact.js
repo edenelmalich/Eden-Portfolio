@@ -3,7 +3,6 @@ import '../Css/Portfolio.css';
 import MediaQuery from 'react-responsive';
 import Typing from 'react-typing-animation';
 import { Card, Button } from 'react-bootstrap';
-import Footer from './Footer';
 const Contact = () => {
   const onClick = url => {
     window.open(url);
@@ -47,7 +46,6 @@ const Contact = () => {
             </Card>
           </div>
         </main>
-        <Footer />
       </MediaQuery>
       <MediaQuery minDeviceWidth={1280} maxDeviceWidth={2560}>
         <div className='Page-Container'>

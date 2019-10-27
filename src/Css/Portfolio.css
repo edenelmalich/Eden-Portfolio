@@ -188,9 +188,6 @@ a:not([href]):not([tabindex]) {
     height: 365px;
 }
 
-.Box-padding {
-    padding-bottom: 4rem;
-}
 
 .image {
     position: absolute;

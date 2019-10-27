@@ -1,7 +1,6 @@
 import React, { Fragment } from 'react';
 import MediaQuery from 'react-responsive';
 import Typing from 'react-typing-animation';
-import Footer from './Footer';
 import Toast from 'react-bootstrap/Toast';
 // Redux
 
@@ -73,7 +72,6 @@ const Skills = () => {
             </div>
           </div>
         </main>
-        <Footer />
       </MediaQuery>
       <MediaQuery minDeviceWidth={1280} maxDeviceWidth={2560}>
         <div className='Page-Container'>

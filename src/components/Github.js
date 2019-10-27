@@ -2,7 +2,6 @@ import React, { Fragment } from 'react';
 import MediaQuery from 'react-responsive';
 import Typing from 'react-typing-animation';
 import { Card, Button } from 'react-bootstrap';
-import Footer from './Footer';
 
 const Github = () => {
   const onClick = url => {
@@ -63,7 +62,6 @@ const Github = () => {
             </Card>
           </div>
         </main>
-        <Footer />
       </MediaQuery>
 
       <MediaQuery minDeviceWidth={1280} maxDeviceWidth={2560}>
