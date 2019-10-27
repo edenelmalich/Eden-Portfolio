@@ -40,8 +40,7 @@ const Home = () => {
             </div>
             <div className='Main-Padding'></div>
             <div className='Job-Text'>
-              Practical software engineer is looking for a junior Full-Stack to
-              gain experience in the field.
+              Practical software engineer interested in a junior Full-Stack job.
             </div>
           </div>
 
@@ -52,10 +51,10 @@ const Home = () => {
                 with development experience in React.js, Redux.js Node.js,
                 Express.js Css3, Html, JavaScript. Proven experience in routine
                 work under stress conditions while looking at the small details.
-                Also, creating team work interfaces to achieve goals and
-                objectives set by management. Decisive, determined to achieve
-                the goal with great motivation to learn new fields and succeed
-                by implementing My studies.
+                Also, creating team work interfaces to achieve goals and targets
+                set by company management. Decisive, determined to achieve the
+                goal with great motivation to learn new fields and succeed by
+                implementing My studies.
               </Typing>
             </div>
           </div>

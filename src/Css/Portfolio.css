@@ -185,15 +185,20 @@ a:not([href]):not([tabindex]) {
 }
 
 .Project-box {
-    height: 365px;
+    padding-bottom: 25px;
 }
 
-
 .image {
-    position: absolute;
-    width: 300px;
+    position: relative;
+    width: 90%;
     height: 150px;
 
+}
+
+.imagePhone {
+    position: relative;
+    width: 90%;
+    height: 500px;
 }
 
 /* Footer Attributes */
@@ -227,6 +232,10 @@ a:not([href]):not([tabindex]) {
     .Main-Card-width {
         width: 26rem;
     }
+
+    .image {
+        width: 85%;
+    }
 }
 
 @media only screen and (width: 1366px) {
@@ -239,6 +248,9 @@ a:not([href]):not([tabindex]) {
         width: 28rem;
     }
 
+    .image {
+        width: 85%;
+    }
 
 }
 
@@ -251,6 +263,10 @@ a:not([href]):not([tabindex]) {
 
     .Main-Card-width {
         width: 30rem;
+    }
+
+    .image {
+        width: 85%;
     }
 
 }
@@ -272,6 +288,10 @@ a:not([href]):not([tabindex]) {
 
     .Main-Card-width {
         width: 34rem;
+    }
+
+    .image {
+        width: 85%;
     }
 
 }
@@ -306,11 +326,6 @@ a:not([href]):not([tabindex]) {
     .image {
         width: 450px;
         height: 200px;
-    }
-
-    .Project-box {
-        height: 430px;
-
     }
 
     .Card-width {
