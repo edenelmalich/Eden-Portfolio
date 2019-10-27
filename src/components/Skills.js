@@ -12,13 +12,14 @@ const Skills = () => {
         <header className='Mobile-profile-content'>
           <div className='Mobile-profile'>
             <div className='Mobile-Header'>Technical Skills</div>
-            Languages ​​that I have learned in my studies And online courses.
             <div className='Main-Padding'></div>
-            <div className='Mobile-job'></div>
+            <div className='Mobile-job'>
+              Languages ​​that I have learned in my studies And online courses.
+            </div>
           </div>
         </header>
         <main className='Mobile-Details-content'>
-          <div className='Sub-Header '> My technical skills </div>
+          <div className='Sub-Header '>My technical skills</div>
           <div className='Mobile-Details'>
             <div className='Main-Flex'>
               <Toast>

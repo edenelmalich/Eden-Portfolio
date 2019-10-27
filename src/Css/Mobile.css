@@ -13,8 +13,8 @@ body {
 .Mobile-profile-content {
     padding-left: 2rem;
     padding-right: 2rem;
-    background: #484848;
-    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.8);
+    background: #353c3f;
+    box-shadow: 0px 2px 5px 0px #f8f9fa;
 }
 
 .Mobile-profile {
@@ -23,19 +23,19 @@ body {
 
 .Mobile-Header {
     font-size: 2.5rem;
-    color: #fff;
+    color: #f8f9fa;
     position: relative;
 }
 
 .Mobile-position {
     font-size: 1.5rem;
-    color: #fff;
+    color: #f8f9fa;
     position: relative;
 }
 
 .Mobile-job {
     font-size: 1.2rem;
-    color: #fff;
+    color: #f8f9fa;
     position: relative;
 }
 
@@ -47,20 +47,29 @@ body {
 
 .Sub-Header {
     padding-bottom: 15px;
-    color: #6e6e6e;
+    color: #353c3f;
     font-size: 22px;
     font-weight: 600;
 }
 
 .Mobile-Details {
-    color: #6e6e6e;
+    color: #353c3f;
     font-size: 18px;
 }
 
+.navbar-light .navbar-toggler {
+    color: #353c3f;
+    ;
 
+}
+
+.navbar-light .navbar-brand {
+    color: #353c3f;
+}
 
 .navbar-light .navbar-nav .nav-link {
-    color: rgba(0, 0, 0, .9);
+    color: #353c3f;
+    font-size: 18px;
 }
 
 .navbar-light .navbar-nav .nav-link:hover {
@@ -73,7 +82,7 @@ body {
 }
 
 .navbar {
-    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.8);
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.2);
 
 }
 
@@ -107,6 +116,14 @@ body {
 
     }
 
+    .toast {
+        flex: 0 0 45%;
+        background: #353c3f;
+        color: #f8f9fa;
+        font-size: 18px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 
     .Project-box {
         height: 460px;
