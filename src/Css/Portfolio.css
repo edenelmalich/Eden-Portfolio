@@ -199,26 +199,16 @@ a:not([href]):not([tabindex]) {
 
 }
 
-
+/* Footer Attributes */
 .App-footer {
     position: fixed;
     width: 100%;
-    font-size: 22px;
+    font-size: 16px;
     color: #fff;
     bottom: 0;
     padding: 1.25rem;
     border-top: 1px solid #6e6e6e;
 }
-
-/* Att For Mobile Screen */
-@media only screen and (width: 320px) {}
-
-/* Att for Mobile Screen Large */
-@media only screen and (width: 375px) {}
-
-/* Att For Tablet Screen */
-@media only screen and (width: 768px) {}
-
 
 @media only screen and (width: 1280px) {
 

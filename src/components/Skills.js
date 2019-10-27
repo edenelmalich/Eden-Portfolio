@@ -68,7 +68,7 @@ const Skills = () => {
                 <Toast.Body>Github.</Toast.Body>
               </Toast>
               <Toast>
-                <Toast.Body>VB.Net.</Toast.Body>
+                <Toast.Body>Bootstrap.</Toast.Body>
               </Toast>
             </div>
           </div>
