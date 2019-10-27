@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react';
 import '../Css/Portfolio.css';
 import { NavLink } from 'react-router-dom';
+import { NavDropdown } from 'react-bootstrap';
 
 const PortfolioNav = () => {
   return (
@@ -32,6 +33,11 @@ const PortfolioNav = () => {
               Contact
             </NavLink>
           </li>
+          <NavDropdown title='Languages' id='basic-nav-dropdown'>
+            <NavDropdown.Item>Hebrew</NavDropdown.Item>
+
+            <NavDropdown.Item>English</NavDropdown.Item>
+          </NavDropdown>
         </ul>
       </div>
     </Fragment>

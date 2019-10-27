@@ -43,7 +43,7 @@ const Projects = () => {
                     variant='light'
                     onClick={() =>
                       openWindow(
-                        'https://github.com/edenelmalich/FinalProject-Server-side'
+                        'https://github.com/edenelmalich/FinalProject-Server-Side'
                       )
                     }
                   >
@@ -258,7 +258,7 @@ const Projects = () => {
                       variant='light'
                       onClick={() =>
                         openWindow(
-                          'https://github.com/edenelmalich/FinalProject-Server-side'
+                          'https://github.com/edenelmalich/FinalProject-Server-Side'
                         )
                       }
                     >

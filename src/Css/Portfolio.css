@@ -16,6 +16,10 @@ img {
     cursor: pointer;
 }
 
+h1 {
+    position: relative;
+}
+
 .Page-Container {
     position: fixed;
     display: flex;
@@ -148,10 +152,12 @@ label {
 
 .Content-Nav a {
     color: #fff;
+
 }
 
 a:hover {
     color: #303030;
+
 }
 
 a.active {
@@ -174,6 +180,22 @@ a:not([href]):not([tabindex]) {
 .navbar-light .navbar-nav .nav-link {
     color: #fff;
 }
+
+.dropdown-menu {
+    font-size: 1.2rem;
+    background-color: transparent;
+
+}
+
+.dropdown-menu a:hover {
+    background: transparent;
+
+}
+
+.dropdown-menu a:active {
+    color: #303030;
+}
+
 
 .Project-image {
     position: absolute;

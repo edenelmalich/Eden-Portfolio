@@ -41,7 +41,7 @@ const Github = () => {
                     variant='light'
                     onClick={() =>
                       onClick(
-                        'https://github.com/edenelmalich/FinalProject-Server-side'
+                        'https://github.com/edenelmalich/FinalProject-Server-Side'
                       )
                     }
                   >
@@ -92,7 +92,7 @@ const Github = () => {
                       variant='light'
                       onClick={() =>
                         onClick(
-                          'https://github.com/edenelmalich/FinalProject-Server-side'
+                          'https://github.com/edenelmalich/FinalProject-Server-Side'
                         )
                       }
                     >
