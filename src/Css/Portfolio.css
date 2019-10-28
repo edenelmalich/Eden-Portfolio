@@ -181,22 +181,6 @@ a:not([href]):not([tabindex]) {
     color: #fff;
 }
 
-.dropdown-menu {
-    font-size: 1.2rem;
-    background-color: transparent;
-
-}
-
-.dropdown-menu a:hover {
-    background: transparent;
-
-}
-
-.dropdown-menu a:active {
-    color: #303030;
-}
-
-
 .Project-image {
     position: absolute;
     top: 15px;
