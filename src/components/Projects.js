@@ -43,7 +43,7 @@ const Projects = () => {
                     variant='light'
                     onClick={() =>
                       openWindow(
-                        'https://github.com/edenelmalich/FinalProject-Server-Side'
+                        'https://github.com/edenelmalich/Final-Project-Full'
                       )
                     }
                   >
@@ -73,9 +73,7 @@ const Projects = () => {
                       <Button
                         variant='light'
                         onClick={() =>
-                          openWindow(
-                            'https://elastic-mcclintock-ef7508.netlify.com/'
-                          )
+                          openWindow('https://eden-portfolio.herokuapp.com/')
                         }
                       >
                         Image Browser
@@ -104,9 +102,7 @@ const Projects = () => {
                       <Button
                         variant='light'
                         onClick={() =>
-                          openWindow(
-                            'https://mysterious-hamlet-41297.herokuapp.com/'
-                          )
+                          openWindow('https://eden-portfolio.herokuapp.com/')
                         }
                       >
                         Portfolio
@@ -133,9 +129,7 @@ const Projects = () => {
                     <Button
                       variant='light'
                       onClick={() =>
-                        openWindow(
-                          'https://mysterious-hamlet-41297.herokuapp.com/'
-                        )
+                        openWindow('https://eden-portfolio.herokuapp.com/')
                       }
                     >
                       Portfolio
@@ -245,9 +239,7 @@ const Projects = () => {
                     <Button
                       variant='light'
                       onClick={() =>
-                        openWindow(
-                          'https://elastic-mcclintock-ef7508.netlify.com/'
-                        )
+                        openWindow('https://eden-portfolio.herokuapp.com/')
                       }
                     >
                       Image Browser
@@ -258,7 +250,7 @@ const Projects = () => {
                       variant='light'
                       onClick={() =>
                         openWindow(
-                          'https://github.com/edenelmalich/FinalProject-Server-Side'
+                          'https://github.com/edenelmalich/Final-Project-Full'
                         )
                       }
                     >
@@ -269,9 +261,7 @@ const Projects = () => {
                     <Button
                       variant='light'
                       onClick={() =>
-                        openWindow(
-                          'https://mysterious-hamlet-41297.herokuapp.com/'
-                        )
+                        openWindow('https://eden-portfolio.herokuapp.com/')
                       }
                     >
                       Portfolio
