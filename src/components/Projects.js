@@ -42,9 +42,7 @@ const Projects = () => {
                   <Button
                     variant='light'
                     onClick={() =>
-                      openWindow(
-                        'https://github.com/edenelmalich/Final-Project-Full'
-                      )
+                      openWindow('https://maxfit-project.herokuapp.com/')
                     }
                   >
                     Final Project
@@ -73,7 +71,9 @@ const Projects = () => {
                       <Button
                         variant='light'
                         onClick={() =>
-                          openWindow('https://eden-portfolio.herokuapp.com/')
+                          openWindow(
+                            'https://elastic-mcclintock-ef7508.netlify.com/'
+                          )
                         }
                       >
                         Image Browser
@@ -239,7 +239,9 @@ const Projects = () => {
                     <Button
                       variant='light'
                       onClick={() =>
-                        openWindow('https://eden-portfolio.herokuapp.com/')
+                        openWindow(
+                          'https://elastic-mcclintock-ef7508.netlify.com/'
+                        )
                       }
                     >
                       Image Browser
@@ -249,9 +251,7 @@ const Projects = () => {
                     <Button
                       variant='light'
                       onClick={() =>
-                        openWindow(
-                          'https://github.com/edenelmalich/Final-Project-Full'
-                        )
+                        openWindow('https://maxfit-project.herokuapp.com/')
                       }
                     >
                       Final Project
