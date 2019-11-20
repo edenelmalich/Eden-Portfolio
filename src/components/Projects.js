@@ -72,7 +72,7 @@ const Projects = () => {
                         variant='light'
                         onClick={() =>
                           openWindow(
-                            'https://elastic-mcclintock-ef7508.netlify.com/'
+                            'https://imagebrowser-eden-elmalich.netlify.com/'
                           )
                         }
                       >
@@ -240,7 +240,7 @@ const Projects = () => {
                       variant='light'
                       onClick={() =>
                         openWindow(
-                          'https://elastic-mcclintock-ef7508.netlify.com/'
+                          'https://imagebrowser-eden-elmalich.netlify.com/'
                         )
                       }
                     >
