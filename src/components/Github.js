@@ -58,6 +58,18 @@ const Github = () => {
                     Portfolio
                   </Button>
                 </Card.Text>
+                <Card.Text>
+                  <Button
+                    variant='light'
+                    onClick={() =>
+                      onClick(
+                        'https://github.com/edenelmalich/Eden-Elmalich-17-11-2019'
+                      )
+                    }
+                  >
+                    weatherApp
+                  </Button>
+                </Card.Text>
               </Card.Body>
             </Card>
           </div>

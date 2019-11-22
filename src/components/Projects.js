@@ -5,6 +5,8 @@ import '../Css/Portfolio.css';
 import maxfit from '../images/maxfit.png';
 import portfolio from '../images/portfolio.png';
 import MobilePortfolio from '../images/MobilePortfolio.png';
+import weatherapp from '../images/weatherapp.png';
+import FavoritesPage from '../images/FavoritesPage.png';
 import { Card, Button } from 'react-bootstrap';
 import imagebrowser from '../images/imagebrowser.png';
 
@@ -142,7 +144,44 @@ const Projects = () => {
                 <img
                   src={MobilePortfolio}
                   className='Mobile-PortfolioImage'
-                  alt='Maxfit Project'
+                  alt='portfolio Project'
+                />
+              </div>
+              <Card bg='light' className='Card-width'>
+                <Card.Header>weatherApp</Card.Header>
+                <Card.Body>
+                  <Card.Title>Weather app with Favorites page</Card.Title>
+                  <Card.Text>
+                    The weather app will allow you to see the weather worldwide
+                    and save it to favorites
+                  </Card.Text>
+                  <Card.Text>
+                    <Button
+                      variant='light'
+                      onClick={() =>
+                        openWindow(
+                          'https://weather-app-eden-elmalich.herokuapp.com/'
+                        )
+                      }
+                    >
+                      weatherApp
+                    </Button>
+                  </Card.Text>
+                </Card.Body>
+              </Card>
+              <div className='Main-Padding'></div>
+              <div className='Mobile-box'>
+                <img
+                  src={weatherapp}
+                  className='imageMobile'
+                  alt='weatherApp Project'
+                />
+              </div>
+              <div className='Mobile-box'>
+                <img
+                  src={FavoritesPage}
+                  className='imageMobile'
+                  alt='weatherApp Project'
                 />
               </div>
             </div>
