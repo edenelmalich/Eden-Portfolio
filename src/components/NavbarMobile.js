@@ -1,21 +1,36 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../Css/Mobile.css';
 import { Navbar, Nav } from 'react-bootstrap';
-// Redux
+import { Link } from 'react-router-dom';
 
 const NavbarMobile = () => {
+  // useState
+  const [NavState, SetNavState] = useState(false);
   return (
     <div className='NavMobile'>
       <Navbar bg='light' expand='lg'>
         <Navbar.Brand href='/'>Eden Elmalich</Navbar.Brand>
-        <Navbar.Toggle aria-controls='basic-navbar-nav' />
-        <Navbar.Collapse id='basic-navbar-nav'>
+        <Navbar.Toggle
+          aria-controls='basic-navbar-nav'
+          onClick={() => SetNavState(!NavState)}
+        />
+        <Navbar.Collapse in={NavState} id='basic-navbar-nav'>
           <Nav className='mr-auto'>
-            <Nav.Link href='/'>Home</Nav.Link>
-            <Nav.Link href='/Github'>Github</Nav.Link>
-            <Nav.Link href='/Projects'>Projects</Nav.Link>
-            <Nav.Link href='/Skills'>Skills</Nav.Link>
-            <Nav.Link href='/Contact'>Contact</Nav.Link>
+            <Link onClick={() => SetNavState(false)} to='/'>
+              Home
+            </Link>
+            <Link to='/Github' onClick={() => SetNavState(false)}>
+              Github
+            </Link>
+            <Link to='/Projects' onClick={() => SetNavState(false)}>
+              Projects
+            </Link>
+            <Link to='/Skills' onClick={() => SetNavState(false)}>
+              Skills
+            </Link>
+            <Link to='/Contact' onClick={() => SetNavState(false)}>
+              Contact
+            </Link>
           </Nav>
         </Navbar.Collapse>
       </Navbar>
