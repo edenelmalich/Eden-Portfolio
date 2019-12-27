@@ -2,6 +2,28 @@ import React, { Fragment } from 'react';
 import { Card, Button } from 'react-bootstrap';
 
 const Github = () => {
+  const Links = [
+    {
+      name: 'Image Browser',
+      Link: 'https://github.com/edenelmalich/image-Browser'
+    },
+    {
+      name: ' Final Project',
+      Link: 'https://github.com/edenelmalich/Final-Project-Full'
+    },
+    {
+      name: 'Portfolio',
+      Link: 'https://github.com/edenelmalich/eden-portfolio'
+    },
+    {
+      name: 'weatherApp',
+      Link: 'https://github.com/edenelmalich/Eden-Elmalich-17-11-2019'
+    },
+    {
+      name: 'Snake game multiplayer',
+      Link: 'https://github.com/edenelmalich/snakeFull'
+    }
+  ];
   const onClick = url => {
     window.open(url);
   };
@@ -24,60 +46,13 @@ const Github = () => {
             <Card bg='light' className='Main-Card-width'>
               <Card.Header>Check my projects</Card.Header>
               <Card.Body>
-                <Card.Text>
-                  <Button
-                    variant='light'
-                    onClick={() =>
-                      onClick('https://github.com/edenelmalich/image-Browser')
-                    }
-                  >
-                    Image Browser
-                  </Button>
-                </Card.Text>
-                <Card.Text>
-                  <Button
-                    variant='light'
-                    onClick={() =>
-                      onClick(
-                        'https://github.com/edenelmalich/Final-Project-Full'
-                      )
-                    }
-                  >
-                    Final Project
-                  </Button>
-                </Card.Text>
-                <Card.Text>
-                  <Button
-                    variant='light'
-                    onClick={() =>
-                      onClick('https://github.com/edenelmalich/eden-portfolio')
-                    }
-                  >
-                    Portfolio
-                  </Button>
-                </Card.Text>
-                <Card.Text>
-                  <Button
-                    variant='light'
-                    onClick={() =>
-                      onClick(
-                        'https://github.com/edenelmalich/Eden-Elmalich-17-11-2019'
-                      )
-                    }
-                  >
-                    weatherApp
-                  </Button>
-                </Card.Text>
-                <Card.Text>
-                  <Button
-                    variant='light'
-                    onClick={() =>
-                      onClick('https://github.com/edenelmalich/snakeFull')
-                    }
-                  >
-                    Snake game multiplayer
-                  </Button>
-                </Card.Text>
+                {Links.map((link, i) => (
+                  <Card.Text key={i}>
+                    <Button variant='light' onClick={() => onClick(link.Link)}>
+                      {link.name}
+                    </Button>
+                  </Card.Text>
+                ))}
               </Card.Body>
             </Card>
           </div>

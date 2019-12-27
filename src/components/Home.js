@@ -8,6 +8,13 @@ import gameArea from '../images/gameArea.png';
 import portfolio from '../images/portfolio.png';
 
 const Home = () => {
+  const projectsImages = [
+    maxfit,
+    imagebrowser,
+    weatherapp,
+    gameArea,
+    portfolio
+  ];
   return (
     <div className='Home'>
       <header className='Mobile-profile-content'>
@@ -34,41 +41,11 @@ const Home = () => {
             studies.
           </div>
           <Carousel>
-            <Carousel.Item>
-              <img
-                className='d-block w-100'
-                src={maxfit}
-                alt='maxfit project'
-              />
-            </Carousel.Item>
-            <Carousel.Item>
-              <img
-                className='d-block w-100'
-                src={imagebrowser}
-                alt='image browser project'
-              />
-            </Carousel.Item>
-            <Carousel.Item>
-              <img
-                className='d-block w-100'
-                src={weatherapp}
-                alt='weather app project'
-              />
-            </Carousel.Item>
-            <Carousel.Item>
-              <img
-                className='d-block w-100'
-                src={gameArea}
-                alt='snake game project'
-              />
-            </Carousel.Item>
-            <Carousel.Item>
-              <img
-                className='d-block w-100'
-                src={portfolio}
-                alt='portfolio project'
-              />
-            </Carousel.Item>
+            {projectsImages.map((project, i) => (
+              <Carousel.Item key={i}>
+                <img className='d-block w-100' src={project} alt='project' />
+              </Carousel.Item>
+            ))}
           </Carousel>
         </div>
       </main>

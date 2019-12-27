@@ -2,6 +2,24 @@ import React, { Fragment } from 'react';
 import Toast from 'react-bootstrap/Toast';
 
 const Skills = () => {
+  const skills = [
+    'React.js.',
+    'Redux.js.',
+    'Node.js.',
+    'Express.js.',
+    'Css3.',
+    'Html.',
+    'JavaScript.',
+    'SQL.',
+    'PHP.',
+    'Java.',
+    'Python.',
+    'MysQL.',
+    'C/C++.',
+    'MongoDB.',
+    'Github.',
+    'Bootstrap.'
+  ];
   return (
     <Fragment>
       <header className='Mobile-profile-content'>
@@ -19,54 +37,11 @@ const Skills = () => {
         <div className='fullPage'>
           <div className='Mobile-Details'>
             <div className='Main-Flex'>
-              <Toast>
-                <Toast.Body>React.js.</Toast.Body>
-              </Toast>
-              <Toast>
-                <Toast.Body>Redux.js.</Toast.Body>
-              </Toast>
-              <Toast>
-                <Toast.Body>Node.js.</Toast.Body>
-              </Toast>
-              <Toast>
-                <Toast.Body>Express.js.</Toast.Body>
-              </Toast>
-              <Toast>
-                <Toast.Body>Css3.</Toast.Body>
-              </Toast>
-              <Toast>
-                <Toast.Body>Html.</Toast.Body>
-              </Toast>
-              <Toast>
-                <Toast.Body>JavaScript.</Toast.Body>
-              </Toast>
-              <Toast>
-                <Toast.Body>SQL</Toast.Body>
-              </Toast>
-              <Toast>
-                <Toast.Body>PHP.</Toast.Body>
-              </Toast>
-              <Toast>
-                <Toast.Body>Java.</Toast.Body>
-              </Toast>
-              <Toast>
-                <Toast.Body>Python.</Toast.Body>
-              </Toast>
-              <Toast>
-                <Toast.Body>MysQL</Toast.Body>
-              </Toast>
-              <Toast>
-                <Toast.Body>C/C++.</Toast.Body>
-              </Toast>
-              <Toast>
-                <Toast.Body>MongoDB.</Toast.Body>
-              </Toast>
-              <Toast>
-                <Toast.Body>Github.</Toast.Body>
-              </Toast>
-              <Toast>
-                <Toast.Body>Bootstrap.</Toast.Body>
-              </Toast>
+              {skills.map((skill, i) => (
+                <Toast key={i}>
+                  <Toast.Body>{skill}</Toast.Body>
+                </Toast>
+              ))}
             </div>
           </div>
           <div className='icons-container'></div>
