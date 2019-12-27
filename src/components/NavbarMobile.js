@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import '../Css/Mobile.css';
 import { Navbar, Nav } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 

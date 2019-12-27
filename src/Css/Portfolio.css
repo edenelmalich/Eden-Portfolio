@@ -7,7 +7,6 @@ body {
 
 /* Attributes for all the pages */
 img {
-    position: fixed;
     width: 100%;
     height: 100%;
     background-position: center;
@@ -16,62 +15,30 @@ img {
     cursor: pointer;
 }
 
+.mr-auto,
+.mx-auto {
+    background: #231f20;
+}
+
+.bg-light {
+    background-color: #231f20 !important;
+}
+
+.main {
+    background: #231f20;
+}
+
 h1 {
     position: relative;
 }
 
-.Page-Container {
-    position: fixed;
-    display: flex;
-    width: 100%;
-    height: 100%;
-}
-
-.Portfolio-Container {
-    width: 300px;
-    padding-left: 40px;
-    padding-top: 10px;
-}
-
-.Portfolio-Content {
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 290px;
-    width: 40%;
-    left: 30%;
-    top: 30%;
-    padding-left: 42px;
-    padding-right: 5px;
-}
-
-.Portfolio-Header {
-    position: relative;
-    color: #fff;
-    font-weight: 600;
-    font-size: 48px;
-    white-space: nowrap;
-
-}
-
-#Port-Position {
-    font-size: 24px;
-    white-space: normal;
-}
-
-.Job-Text {
-    font-size: 20px;
-    color: #fff;
-    font-weight: 600;
-}
-
-.Main-Border {
-    border-bottom: 1px solid #656565;
-}
-
 .Main-Padding {
     padding-bottom: 1rem;
+}
+
+.btn-light {
+
+    border-color: #231f20;
 }
 
 .list-group-item {
@@ -83,29 +50,38 @@ h1 {
     width: 18.7rem;
 }
 
-.Main-Card-width {
-    width: 32rem;
+.card-header {
+    background: #231f20;
 }
 
-.Home-Text {
-    padding-right: 25px;
-    padding-left: 25px;
+.card-title {
+    color: #231f20;
+}
+
+.card-text {
+    color: #231f20;
+}
+
+.card-body {
+    overflow: auto;
+    background: #fcaf17;
+}
+
+.Main-Card-width {
+    height: auto;
 }
 
 label {
     font-size: 10px;
 }
 
-/* Attributes for Skills page */
-.Skills-Content {
-    width: 70%;
-    padding-top: 50px;
+.Mobile-job {
+    font-size: 20px;
+    text-align: center;
+    color: #231f20;
 }
 
-.Skills-Padding {
-    padding-left: 15px;
-    padding-right: 15px;
-}
+/* Attributes for Skills page */
 
 .Main-Flex {
     display: flex;
@@ -114,8 +90,14 @@ label {
     margin-left: auto;
 }
 
+.toast {
+    background: #fcaf17;
+}
+
 .btn {
-    padding: 0;
+    padding: 0 1rem 0 1rem;
+    background: #231f20;
+    color: #fff;
 }
 
 .toast:not(:last-child) {
@@ -128,12 +110,18 @@ label {
     margin-right: auto;
 }
 
-.Typist-Att {
-    position: relative;
-    font-size: 16px;
-    font-weight: 600;
-    text-align: center;
+.icons-container {
+    padding-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
 }
+
+#img-size {
+    width: 25px;
+    margin-right: 10px;
+}
+
+
 
 .Content-Nav {
     position: relative;
@@ -181,19 +169,6 @@ a:not([href]):not([tabindex]) {
     color: #fff;
 }
 
-.Project-image {
-    position: absolute;
-    top: 15px;
-    right: 25px;
-    width: 350px;
-    height: 500px;
-    overflow: auto;
-}
-
-.Project-box {
-    padding-bottom: 25px;
-}
-
 .image {
     position: relative;
     width: 90%;
@@ -207,163 +182,402 @@ a:not([href]):not([tabindex]) {
     height: 500px;
 }
 
-/* Footer Attributes */
-.App-footer {
+/* carousel attributes */
+.carousel-item {
+    margin-top: 35px;
+    padding-bottom: 2rem;
+}
+
+/* Attributes for mobiles */
+.App {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+#App-flex {
+    flex: 1;
+}
+
+.Mobile-profile-content {
+    margin-top: 50px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    background: #fcaf17;
+    box-shadow: 0px 2px 5px 0px #f8f9fa;
+}
+
+.Mobile-profile {
+    padding: 1.25rem;
+}
+
+.Mobile-Header {
+
+    font-size: 2.5rem;
+    color: #231f20;
+    position: unset;
+}
+
+.Mobile-position {
+    font-size: 1.5rem;
+    color: #231f20;
+    position: unset;
+}
+
+
+
+.Mobile-Details-content {
+    overflow: auto;
+    padding: 2rem;
+    background: #202020;
+    min-height: 100vh;
+    color: #fff;
+}
+
+.Sub-Header {
+    padding-bottom: 15px;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.Mobile-Details {
+    color: #fff;
+    font-size: 18px;
+}
+
+.imageMobile {
+    position: unset;
+    width: 100%;
+    height: 150px;
+}
+
+.Mobile-PortfolioImage {
+    position: unset;
+    width: 100%;
+    height: 600px;
+}
+
+/* Navbar Attributes */
+.NavMobile a {
+    color: #fff;
+    font-size: 18px;
+    display: block;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+}
+
+.NavMobile a:hover {
+    color: #fcaf17;
+}
+
+.navbar-light .navbar-brand {
+    color: #fff;
+}
+
+.navbar-light .navbar-brand:hover {
+    color: #fcaf17;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #6e6e6e;
+}
+
+.navbar-brand {
+    padding-top: 1rem;
+}
+
+.navbar {
     position: fixed;
     width: 100%;
-    font-size: 16px;
-    color: #fff;
+
+}
+
+
+
+.card {
+    position: unset;
+}
+
+/* Footer Attributes */
+.Mobile-footer {
+    position: relative;
     bottom: 0;
-    padding: 1.25rem;
-    border-top: 1px solid #6e6e6e;
+    padding: 10px;
+    font-size: 1rem;
+    width: 100%;
+    color: #231f20;
+    background: #fcaf17;
 }
 
-@media only screen and (width: 1280px) {
-
-    .Portfolio-Content {
-        height: 310px;
-        padding-left: 35px;
-        padding-top: 5px;
-
-    }
-
-    .Project-image {
-        right: 5px;
-    }
-
-    .Typist-Att {
-        font-size: 16px;
-    }
-
-    .Main-Card-width {
-        width: 26rem;
-    }
-
-    .image {
-        width: 85%;
-    }
+.Footer-top {
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-top-color: rgba(0, 0, 0, 0.125);
 }
 
-@media only screen and (width: 1366px) {
-    .Portfolio-Content {
-        height: 300px;
-        padding-left: 35px;
-    }
-
-    .Main-Card-width {
-        width: 28rem;
-    }
-
-    .image {
-        width: 85%;
-    }
-
+.Footer-Padding {
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
+
 
 /* Att For Screen Size 1440px */
-@media only screen and (width: 1440px) {
-    .Portfolio-Content {
-        height: 360px;
-        padding-top: 15px;
+@media only screen and (min-width: 1024px) {
+    .Mobile-Header {
+        text-align: center;
+        padding: 1rem;
     }
 
-    .Main-Card-width {
-        width: 30rem;
+    .navbar {
+        height: 75px;
     }
 
-    .image {
-        width: 85%;
+    .Mobile-position {
+        text-align: center;
     }
 
-}
-
-@media only screen and (width: 1600px) {
-    .Portfolio-Content {
-        height: 340px;
-        padding-top: 15px;
+    p {
+        padding-left: 20%;
+        padding-right: 20%;
     }
 
-    .Skills-Padding {
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-
-    a {
-        font-size: 28px;
-    }
-
-    .Main-Card-width {
-        width: 34rem;
-    }
-
-    .image {
-        width: 85%;
-    }
-
-}
-
-@media only screen and (width: 1920px) {
-    .Portfolio-Header {
-        font-size: 60px;
-    }
-
-    #Port-Position {
-        font-size: 38px;
-    }
-
-    a {
-        font-size: 38px;
-    }
-
-    .Portfolio-Container {
-        width: 375px;
-    }
-
-    .Portfolio-Content {
-        height: 410px;
-        padding-top: 10px;
-        padding-left: 45px;
-    }
-
-    .Project-image {
-        width: 450px;
-    }
-
-    .image {
-        width: 450px;
-        height: 200px;
+    .card-body {
+        overflow: unset;
     }
 
     .Card-width {
-        width: 28rem;
+        width: unset;
     }
 
-    .Typist-Att {
-        font-size: 24px;
+
+    .Sub-Header {
+        text-align: center;
     }
 
-    .Main-Card-width {
-        width: 40rem;
+    .fullPage {
+        padding-right: 200px;
+        padding-left: 200px;
     }
 
-    .Job-Text {
-        font-size: 28px;
+    .Mobile-Details {
+        text-align: center;
+
     }
 
-    li {
-        font-size: 34px;
+    .imageMobile {
+        height: unset;
     }
 
-    label {
-        font-size: 22px;
+
+}
+
+@media only screen and (max-width: 425px) {
+    .Card-width {
+        width: 100%;
     }
 
-    .Skills-Padding {
-        padding-right: 25px;
-        padding-left: 25px;
+    .Mobile-job {
+        font-size: 16px;
+        color: #231f20;
+        text-align: unset;
     }
 
+    /* toast Attributes */
     .toast {
-        font-size: 22px;
+        flex: 0 0 45%;
+
+        color: #f8f9fa;
+        font-size: 18px;
+        margin-left: auto;
+        margin-right: auto;
     }
+
+    .toast:not(:last-child) {
+        margin-bottom: 10px;
+    }
+
+    .toast.show {
+        display: block;
+        opacity: 1;
+        margin-bottom: 10px;
+    }
+
+    .Mobile-box {
+        border-bottom: 1px solid #fcaf17;
+        padding-bottom: 25px;
+    }
+
+
+}
+
+@media only screen and (width: 640px),
+(width: 667px),
+(width: 731px),
+(width: 823px),
+(width: 568px),
+(width: 736px) {
+    .Card-width {
+        width: 100%;
+    }
+
+    .Mobile-PortfolioImage {
+        height: 800px;
+    }
+
+
+    /* toast Attributes */
+    .toast {
+        flex: 0 0 45%;
+        background: #353c3f;
+        color: #f8f9fa;
+        font-size: 18px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .toast:not(:last-child) {
+        margin-bottom: 10px;
+    }
+
+    .toast.show {
+        display: block;
+        opacity: 1;
+        margin-bottom: 10px;
+    }
+
+    .Mobile-box {
+        border-bottom: 1px solid #fcaf17;
+        padding-bottom: 25px;
+    }
+
+
+}
+
+@media only screen and(min-width:768px) {
+    .Card-width {
+        width: 100%;
+        height: 300px;
+    }
+
+
+
+    .card-header {
+        font-size: 2.5rem;
+    }
+
+    .h5,
+    h5 {
+        font-size: 2.5rem;
+    }
+
+    p {
+        font-size: 1.8rem;
+    }
+
+    .btn {
+        font-size: 1.8rem;
+    }
+
+    .Mobile-Details {
+        font-size: 2rem;
+    }
+
+    .imageMobile {
+        position: relative;
+        width: 100%;
+        height: 300px;
+    }
+
+
+    .navbar-light .navbar-brand {
+        font-size: 2rem;
+    }
+
+    .navbar-light .navbar-nav .nav-link {
+        color: #353c3f;
+        font-size: 1.5rem;
+    }
+
+    .Sub-Header {
+        font-size: 3rem;
+    }
+
+    .Mobile-Header {
+        font-size: 4rem;
+    }
+
+
+
+    /* toast Attributes */
+    .toast {
+        flex: 0 0 45%;
+        background: #353c3f;
+        color: #f8f9fa;
+        font-size: 2rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .toast:not(:last-child) {
+        margin-bottom: 10px;
+    }
+
+    .toast.show {
+        display: block;
+        opacity: 1;
+        margin-bottom: 10px;
+    }
+
+    .Mobile-box {
+        border-bottom: 1px solid #fcaf17;
+        padding-bottom: 25px;
+    }
+
+
+
+    .Mobile-footer {
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (width: 812px),
+(width: 768px) {
+    .Card-width {
+        width: 100%;
+    }
+
+    .Mobile-PortfolioImage {
+        height: 800px;
+    }
+
+
+
+    /* toast Attributes */
+    .toast {
+        flex: 0 0 45%;
+        background: #353c3f;
+        color: #f8f9fa;
+        font-size: 18px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .toast:not(:last-child) {
+        margin-bottom: 10px;
+    }
+
+    .toast.show {
+        display: block;
+        opacity: 1;
+        margin-bottom: 10px;
+    }
+
+    .Mobile-box {
+        border-bottom: 1px solid #fcaf17;
+        padding-bottom: 25px;
+    }
+
+
+
 }
