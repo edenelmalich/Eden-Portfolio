@@ -24,6 +24,13 @@ img {
     background-color: #231f20 !important;
 }
 
+
+
+.navbar-light .navbar-toggler {
+
+    background: #fcaf17;
+}
+
 .main {
     background: #231f20;
 }
@@ -92,6 +99,7 @@ label {
 
 .toast {
     background: #fcaf17;
+    color: #231f20;
 }
 
 .btn {
@@ -386,8 +394,6 @@ a:not([href]):not([tabindex]) {
     /* toast Attributes */
     .toast {
         flex: 0 0 45%;
-
-        color: #f8f9fa;
         font-size: 18px;
         margin-left: auto;
         margin-right: auto;
@@ -430,7 +436,6 @@ a:not([href]):not([tabindex]) {
     .toast {
         flex: 0 0 45%;
         background: #353c3f;
-        color: #f8f9fa;
         font-size: 18px;
         margin-left: auto;
         margin-right: auto;
@@ -513,7 +518,6 @@ a:not([href]):not([tabindex]) {
     .toast {
         flex: 0 0 45%;
         background: #353c3f;
-        color: #f8f9fa;
         font-size: 2rem;
         margin-left: auto;
         margin-right: auto;
@@ -557,7 +561,6 @@ a:not([href]):not([tabindex]) {
     .toast {
         flex: 0 0 45%;
         background: #353c3f;
-        color: #f8f9fa;
         font-size: 18px;
         margin-left: auto;
         margin-right: auto;
