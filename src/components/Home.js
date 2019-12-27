@@ -5,6 +5,7 @@ import imagebrowser from '../images/imagebrowser.png';
 import maxfit from '../images/maxfit.png';
 import weatherapp from '../images/weatherapp.png';
 import gameArea from '../images/gameArea.png';
+import portfolio from '../images/portfolio.png';
 
 const Home = () => {
   return (
@@ -59,6 +60,13 @@ const Home = () => {
                 className='d-block w-100'
                 src={gameArea}
                 alt='snake game project'
+              />
+            </Carousel.Item>
+            <Carousel.Item>
+              <img
+                className='d-block w-100'
+                src={portfolio}
+                alt='portfolio project'
               />
             </Carousel.Item>
           </Carousel>

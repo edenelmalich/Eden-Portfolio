@@ -2,12 +2,12 @@ import React, { Fragment } from 'react';
 
 import '../Css/Portfolio.css';
 import maxfit from '../images/maxfit.png';
-import portfolio from '../images/portfolio.png';
-import MobilePortfolio from '../images/MobilePortfolio.png';
 import weatherapp from '../images/weatherapp.png';
 import FavoritesPage from '../images/FavoritesPage.png';
+import portfolio from '../images/portfolio.png';
 import { Card, Button } from 'react-bootstrap';
 import imagebrowser from '../images/imagebrowser.png';
+import gameArea from '../images/gameArea.png';
 
 const Projects = () => {
   const openWindow = url => {
@@ -154,6 +154,34 @@ const Projects = () => {
                   src={FavoritesPage}
                   className='imageMobile'
                   alt='weatherApp Project'
+                />
+              </div>
+              <div className='Main-Padding'></div>
+
+              <Card bg='light' className='Card-width'>
+                <Card.Header>Snake game multiplayer</Card.Header>
+                <Card.Body>
+                  <Card.Title>
+                    Snake game multiplayer with socket.io and react, redux
+                  </Card.Title>
+                  <Card.Text>
+                    <Button
+                      variant='light'
+                      onClick={() =>
+                        openWindow('https://github.com/edenelmalich/snakeFull')
+                      }
+                    >
+                      Snake multiplayer game
+                    </Button>
+                  </Card.Text>
+                </Card.Body>
+              </Card>
+              <div className='Main-Padding'></div>
+              <div className='Mobile-box'>
+                <img
+                  src={gameArea}
+                  className='imageMobile'
+                  alt='Snake game Project'
                 />
               </div>
             </div>

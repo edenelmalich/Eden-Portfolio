@@ -116,6 +116,7 @@ label {
     flex: 0 0 25%;
     margin-left: auto;
     margin-right: auto;
+    font-weight: 600;
 }
 
 .icons-container {
@@ -244,12 +245,16 @@ a:not([href]):not([tabindex]) {
 
 .Sub-Header {
     padding-bottom: 15px;
-    color: #fff;
+    color: #231f20;
+    background: #f8f9fa;
     font-size: 22px;
     font-weight: 600;
+    padding: 1rem;
+    text-align: center;
 }
 
 .Mobile-Details {
+    margin-top: 25px;
     color: #fff;
     font-size: 18px;
 }
@@ -370,6 +375,7 @@ a:not([href]):not([tabindex]) {
 
     .Mobile-Details {
         text-align: center;
+        margin-top: 25px;
 
     }
 
