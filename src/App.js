@@ -3,10 +3,8 @@ import Home from './components/Home';
 import './Css/Portfolio.css';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Github from './components/Github';
-
 import Projects from './components/Projects';
 import Contact from './components/Contact';
-
 import Skills from './components/Skills';
 import NavbarMobile from './components/NavbarMobile';
 import Footer from './components/Footer';
