@@ -1,7 +1,5 @@
-import React, { Fragment, useState, useEffect } from 'react';
+import React, { Fragment } from 'react';
 import Toast from 'react-bootstrap/Toast';
-// reactstrap import
-import { Fade } from 'reactstrap';
 
 const Skills = () => {
   const skills = [
@@ -22,38 +20,33 @@ const Skills = () => {
     'Github.',
     'Bootstrap.'
   ];
-  const [isOpen, setIsOpen] = useState(false);
-  useEffect(() => {
-    setIsOpen(true);
-  }, []);
+
   return (
     <Fragment>
-      <Fade in={isOpen}>
-        <header className='Mobile-profile-content'>
-          <div className='Mobile-profile'>
-            <div className='Mobile-Header'>Technical Skills</div>
-            <div className='Main-Padding'></div>
-            <div className='Mobile-job'>
-              Languages ​​that I have learned in my studies And online courses.
-            </div>
+      <header className='Mobile-profile-content'>
+        <div className='Mobile-profile'>
+          <div className='Mobile-Header'>Technical Skills</div>
+          <div className='Main-Padding'></div>
+          <div className='Mobile-job'>
+            Languages ​​that I have learned in my studies And online courses.
           </div>
-        </header>
+        </div>
+      </header>
 
-        <main className='Mobile-Details-content'>
-          <div className='Sub-Header '>My technical skills</div>
-          <div className='fullPage'>
-            <div className='Mobile-Details'>
-              <div className='Main-Flex'>
-                {skills.map((skill, i) => (
-                  <Toast key={i}>
-                    <Toast.Body>{skill}</Toast.Body>
-                  </Toast>
-                ))}
-              </div>
+      <main className='Mobile-Details-content'>
+        <div className='Sub-Header '>My technical skills</div>
+        <div className='fullPage'>
+          <div className='Mobile-Details'>
+            <div className='Main-Flex'>
+              {skills.map((skill, i) => (
+                <Toast key={i}>
+                  <Toast.Body>{skill}</Toast.Body>
+                </Toast>
+              ))}
             </div>
           </div>
-        </main>
-      </Fade>
+        </div>
+      </main>
     </Fragment>
   );
 };
