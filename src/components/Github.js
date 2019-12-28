@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react';
-import { Card, Button } from 'react-bootstrap';
+import { Toast } from 'react-bootstrap';
 
 const Github = () => {
   const Links = [
@@ -20,7 +20,7 @@ const Github = () => {
       Link: 'https://github.com/edenelmalich/Eden-Elmalich-17-11-2019'
     },
     {
-      name: 'Snake game multiplayer',
+      name: 'Snake game ',
       Link: 'https://github.com/edenelmalich/snakeFull'
     }
   ];
@@ -43,18 +43,15 @@ const Github = () => {
         <div className='Sub-Header '>Projects in github</div>
         <div className='fullPage'>
           <div className='Mobile-Details'>
-            <Card bg='light' className='Main-Card-width'>
-              <Card.Header>Check my projects</Card.Header>
-              <Card.Body>
-                {Links.map((link, i) => (
-                  <Card.Text key={i}>
-                    <Button variant='light' onClick={() => onClick(link.Link)}>
-                      {link.name}
-                    </Button>
-                  </Card.Text>
-                ))}
-              </Card.Body>
-            </Card>
+            <div className='Main-Flex'>
+              {Links.map((link, i) => (
+                <Toast key={i}>
+                  <Toast.Body onClick={() => onClick(link.Link)}>
+                    {link.name}
+                  </Toast.Body>
+                </Toast>
+              ))}
+            </div>
           </div>
         </div>
       </main>

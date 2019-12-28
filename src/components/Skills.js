@@ -44,7 +44,6 @@ const Skills = () => {
               ))}
             </div>
           </div>
-          <div className='icons-container'></div>
         </div>
       </main>
     </Fragment>

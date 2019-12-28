@@ -400,9 +400,10 @@ a:not([href]):not([tabindex]) {
     /* toast Attributes */
     .toast {
         flex: 0 0 45%;
-        font-size: 18px;
+        font-size: 15px;
         margin-left: auto;
         margin-right: auto;
+        text-align: center;
     }
 
     .toast:not(:last-child) {
