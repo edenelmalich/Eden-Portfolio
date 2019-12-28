@@ -8,7 +8,7 @@ const NavbarMobile = () => {
   return (
     <div className='NavMobile'>
       <Navbar bg='light' expand='lg'>
-        <Navbar.Brand href='/'>Eden Elmalich</Navbar.Brand>
+        <Link to='/'>Eden Elmalich</Link>
         <Navbar.Toggle
           aria-controls='basic-navbar-nav'
           onClick={() => SetNavState(!NavState)}

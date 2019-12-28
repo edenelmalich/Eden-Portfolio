@@ -1,593 +1,560 @@
 body {
-    margin: 0;
-    padding: 0;
-    font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
+  box-sizing: border-box;
 }
 
 /* Attributes for all the pages */
 img {
-    width: 100%;
-    height: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    cursor: pointer;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
 }
 
 .mr-auto,
 .mx-auto {
-    background: #231f20;
+  background: #231f20;
 }
 
 .bg-light {
-    background-color: #231f20 !important;
+  background-color: #231f20 !important;
 }
 
-
-
 .navbar-light .navbar-toggler {
-
-    background: #fcaf17;
+  background: #fcaf17;
 }
 
 .main {
-    background: #231f20;
+  background: #231f20;
 }
 
 h1 {
-    position: relative;
+  position: relative;
 }
 
 .Main-Padding {
-    padding-bottom: 1rem;
+  padding-bottom: 1rem;
 }
 
 .btn-light {
-
-    border-color: #231f20;
+  border-color: #231f20;
 }
 
 .list-group-item {
-    background: none;
-    font-size: 18px;
+  background: none;
+  font-size: 18px;
 }
 
 .Card-width {
-    width: 18.7rem;
+  width: 18.7rem;
 }
 
 .card-header {
-    background: #231f20;
+  background: #231f20;
 }
 
 .card-title {
-    color: #231f20;
+  color: #231f20;
 }
 
 .card-text {
-    color: #231f20;
+  color: #231f20;
 }
 
 .card-body {
-    overflow: auto;
-    background: #fcaf17;
+  overflow: auto;
+  background: #fcaf17;
 }
 
 .Main-Card-width {
-    height: auto;
+  height: auto;
 }
 
 label {
-    font-size: 10px;
+  font-size: 10px;
 }
 
 .Mobile-job {
-    font-size: 20px;
-    text-align: center;
-    color: #231f20;
+  font-size: 20px;
+  text-align: center;
+  color: #231f20;
 }
 
 /* Attributes for Skills page */
 
 .Main-Flex {
-    display: flex;
-    flex-wrap: wrap;
-    margin-right: auto;
-    margin-left: auto;
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .toast {
-    background: #fcaf17;
-    color: #231f20;
+  background: #fcaf17;
+  color: #231f20;
+  font-size: 18px;
+}
+
+.pointer {
+  cursor: pointer;
 }
 
 .btn {
-    padding: 0 1rem 0 1rem;
-    background: #231f20;
-    color: #fff;
+  padding: 0 1rem 0 1rem;
+  background: #231f20;
+  color: #fff;
 }
 
 .toast:not(:last-child) {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 .toast {
-    flex: 0 0 25%;
-    margin-left: auto;
-    margin-right: auto;
-    font-weight: 600;
+  flex: 0 0 25%;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 600;
 }
 
 .icons-container {
-    padding-top: 1rem;
-    display: flex;
-    flex-wrap: wrap;
+  padding-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 #img-size {
-    width: 25px;
-    margin-right: 10px;
+  width: 25px;
+  margin-right: 10px;
 }
 
-
-
 .Content-Nav {
-    position: relative;
-    font-size: 22px;
-    padding-left: 30px;
-    padding-top: 25px;
+  position: relative;
+  font-size: 22px;
+  padding-left: 30px;
+  padding-top: 25px;
 }
 
 .Text-Mobile {
-    position: relative;
-    padding-top: 10px;
-    color: #fff;
-    font-size: 13px;
-    font-weight: 600;
+  position: relative;
+  padding-top: 10px;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 600;
 }
 
 .Content-Nav a {
-    color: #fff;
-
+  color: #fff;
 }
 
 a:hover {
-    color: #303030;
-
+  color: #303030;
 }
 
 a.active {
-    color: #303030;
+  color: #303030;
 }
 
 li {
-    list-style: none;
+  list-style: none;
 }
 
 button {
-    margin-top: 10px;
+  margin-top: 10px;
 }
 
 a:not([href]):not([tabindex]) {
-    color: #fff;
-    text-decoration: none;
+  color: #fff;
+  text-decoration: none;
 }
 
 .navbar-light .navbar-nav .nav-link {
-    color: #fff;
+  color: #fff;
 }
 
 .image {
-    position: relative;
-    width: 90%;
-    height: 150px;
-
+  position: relative;
+  width: 90%;
+  height: 150px;
 }
 
 .imagePhone {
-    position: relative;
-    width: 90%;
-    height: 500px;
+  position: relative;
+  width: 90%;
+  height: 500px;
 }
 
 /* carousel attributes */
 .carousel-item {
-    margin-top: 35px;
-    padding-bottom: 2rem;
+  margin-top: 35px;
+  padding-bottom: 2rem;
 }
 
 /* Attributes for mobiles */
 .App {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
 }
 
 #App-flex {
-    flex: 1;
+  flex: 1;
 }
 
 .Mobile-profile-content {
-    margin-top: 50px;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    background: #fcaf17;
-    box-shadow: 0px 2px 5px 0px #f8f9fa;
+  margin-top: 75px;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  background: #fcaf17;
+  box-shadow: 0px 2px 5px 0px #f8f9fa;
 }
 
 .Mobile-profile {
-    padding: 1.25rem;
+  padding: 1.25rem;
 }
 
 .Mobile-Header {
-
-    font-size: 2.5rem;
-    color: #231f20;
-    position: unset;
+  font-size: 2.5rem;
+  color: #231f20;
+  position: unset;
 }
 
 .Mobile-position {
-    font-size: 1.5rem;
-    color: #231f20;
-    position: unset;
+  font-size: 1.5rem;
+  color: #231f20;
+  position: unset;
 }
 
-
-
 .Mobile-Details-content {
-    overflow: auto;
-    padding: 2rem;
-    background: #202020;
-    min-height: 100vh;
-    color: #fff;
+  overflow: auto;
+  padding: 2rem;
+  background: #202020;
+  min-height: 100vh;
+  color: #fff;
 }
 
 .Sub-Header {
-    padding-bottom: 15px;
-    color: #231f20;
-    background: #f8f9fa;
-    font-size: 22px;
-    font-weight: 600;
-    padding: 1rem;
-    text-align: center;
+  padding-bottom: 15px;
+  color: #231f20;
+  background: #f8f9fa;
+  font-size: 22px;
+  font-weight: 600;
+  padding: 1rem;
+  text-align: center;
 }
 
 .Mobile-Details {
-    margin-top: 25px;
-    color: #fff;
-    font-size: 18px;
+  margin-top: 25px;
+  color: #fff;
+  font-size: 18px;
 }
 
 .imageMobile {
-    position: unset;
-    width: 100%;
-    height: 150px;
+  position: unset;
+  width: 100%;
+  height: 150px;
 }
 
 .Mobile-PortfolioImage {
-    position: unset;
-    width: 100%;
-    height: 600px;
+  position: unset;
+  width: 100%;
+  height: 600px;
 }
 
 /* Navbar Attributes */
 .NavMobile a {
-    color: #fff;
-    font-size: 18px;
-    display: block;
-    padding: 0.5rem 1rem;
-    text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  display: block;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
 }
 
 .NavMobile a:hover {
-    color: #fcaf17;
+  color: #fcaf17;
 }
 
 .navbar-light .navbar-brand {
-    color: #fff;
+  color: #fff;
 }
 
 .navbar-light .navbar-brand:hover {
-    color: #fcaf17;
+  color: #fcaf17;
 }
 
 .navbar-light .navbar-nav .nav-link:hover {
-    color: #6e6e6e;
+  color: #6e6e6e;
 }
 
 .navbar-brand {
-    padding-top: 1rem;
+  padding-top: 1rem;
 }
 
 .navbar {
-    position: fixed;
-    width: 100%;
-
+  position: fixed;
+  width: 100%;
 }
 
-
-
 .card {
-    position: unset;
+  position: unset;
 }
 
 /* Footer Attributes */
 .Mobile-footer {
-    position: relative;
-    bottom: 0;
-    padding: 10px;
-    font-size: 1rem;
-    width: 100%;
-    color: #231f20;
-    background: #fcaf17;
+  position: relative;
+  bottom: 0;
+  padding: 10px;
+  font-size: 1rem;
+  width: 100%;
+  color: #231f20;
+  background: #fcaf17;
 }
 
 .Footer-top {
-    border-top-style: solid;
-    border-top-width: 1px;
-    border-top-color: rgba(0, 0, 0, 0.125);
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: rgba(0, 0, 0, 0.125);
 }
 
 .Footer-Padding {
-    padding-left: 1rem;
-    padding-right: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
-
 
 /* Att For Screen Size 1440px */
 @media only screen and (min-width: 1024px) {
-    .Mobile-Header {
-        text-align: center;
-        padding: 1rem;
-    }
+  .Mobile-Header {
+    text-align: center;
+    padding: 1rem;
+  }
 
-    .navbar {
-        height: 75px;
-    }
+  .navbar {
+    height: 75px;
+  }
 
-    .Mobile-position {
-        text-align: center;
-    }
+  .Mobile-position {
+    text-align: center;
+  }
 
-    p {
-        padding-left: 20%;
-        padding-right: 20%;
-    }
+  p {
+    padding-left: 20%;
+    padding-right: 20%;
+  }
 
-    .card-body {
-        overflow: unset;
-    }
+  .card-body {
+    overflow: unset;
+  }
 
-    .Card-width {
-        width: unset;
-    }
+  .Card-width {
+    width: unset;
+  }
 
+  .Sub-Header {
+    text-align: center;
+  }
 
-    .Sub-Header {
-        text-align: center;
-    }
+  .fullPage {
+    padding-right: 200px;
+    padding-left: 200px;
+  }
 
-    .fullPage {
-        padding-right: 200px;
-        padding-left: 200px;
-    }
+  .Mobile-Details {
+    text-align: center;
+    margin-top: 25px;
+  }
 
-    .Mobile-Details {
-        text-align: center;
-        margin-top: 25px;
-
-    }
-
-    .imageMobile {
-        height: unset;
-    }
-
-
+  .imageMobile {
+    height: unset;
+  }
 }
 
 @media only screen and (max-width: 425px) {
-    .Card-width {
-        width: 100%;
-    }
+  .Card-width {
+    width: 100%;
+  }
+  .Mobile-profile-content {
+    margin-top: 66px;
+  }
+  .Mobile-job {
+    font-size: 16px;
+    color: #231f20;
+    text-align: unset;
+  }
 
-    .Mobile-job {
-        font-size: 16px;
-        color: #231f20;
-        text-align: unset;
-    }
+  /* toast Attributes */
+  .toast {
+    flex: 0 0 45%;
+    font-size: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
 
-    /* toast Attributes */
-    .toast {
-        flex: 0 0 45%;
-        font-size: 15px;
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center;
-    }
+  .toast:not(:last-child) {
+    margin-bottom: 10px;
+  }
 
-    .toast:not(:last-child) {
-        margin-bottom: 10px;
-    }
+  .toast.show {
+    display: block;
+    opacity: 1;
+    margin-bottom: 10px;
+  }
 
-    .toast.show {
-        display: block;
-        opacity: 1;
-        margin-bottom: 10px;
-    }
-
-    .Mobile-box {
-        border-bottom: 1px solid #fcaf17;
-        padding-bottom: 25px;
-    }
-
-
+  .Mobile-box {
+    border-bottom: 1px solid #fcaf17;
+    padding-bottom: 25px;
+  }
 }
 
 @media only screen and (width: 640px),
-(width: 667px),
-(width: 731px),
-(width: 823px),
-(width: 568px),
-(width: 736px) {
-    .Card-width {
-        width: 100%;
-    }
+  (width: 667px),
+  (width: 731px),
+  (width: 823px),
+  (width: 568px),
+  (width: 736px) {
+  .Card-width {
+    width: 100%;
+  }
 
-    .Mobile-PortfolioImage {
-        height: 800px;
-    }
+  .Mobile-PortfolioImage {
+    height: 800px;
+  }
 
+  /* toast Attributes */
+  .toast {
+    flex: 0 0 45%;
+    background: #353c3f;
+    font-size: 18px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
-    /* toast Attributes */
-    .toast {
-        flex: 0 0 45%;
-        background: #353c3f;
-        font-size: 18px;
-        margin-left: auto;
-        margin-right: auto;
-    }
+  .toast:not(:last-child) {
+    margin-bottom: 10px;
+  }
 
-    .toast:not(:last-child) {
-        margin-bottom: 10px;
-    }
+  .toast.show {
+    display: block;
+    opacity: 1;
+    margin-bottom: 10px;
+  }
 
-    .toast.show {
-        display: block;
-        opacity: 1;
-        margin-bottom: 10px;
-    }
-
-    .Mobile-box {
-        border-bottom: 1px solid #fcaf17;
-        padding-bottom: 25px;
-    }
-
-
+  .Mobile-box {
+    border-bottom: 1px solid #fcaf17;
+    padding-bottom: 25px;
+  }
 }
 
 @media only screen and(min-width:768px) {
-    .Card-width {
-        width: 100%;
-        height: 300px;
-    }
+  .Card-width {
+    width: 100%;
+    height: 300px;
+  }
+  .card-header {
+    font-size: 2.5rem;
+  }
 
+  .h5,
+  h5 {
+    font-size: 2.5rem;
+  }
 
+  p {
+    font-size: 1.8rem;
+  }
 
-    .card-header {
-        font-size: 2.5rem;
-    }
+  .btn {
+    font-size: 1.8rem;
+  }
 
-    .h5,
-    h5 {
-        font-size: 2.5rem;
-    }
+  .Mobile-Details {
+    font-size: 2rem;
+  }
 
-    p {
-        font-size: 1.8rem;
-    }
+  .imageMobile {
+    position: relative;
+    width: 100%;
+    height: 300px;
+  }
 
-    .btn {
-        font-size: 1.8rem;
-    }
+  .navbar-light .navbar-brand {
+    font-size: 2rem;
+  }
 
-    .Mobile-Details {
-        font-size: 2rem;
-    }
+  .navbar-light .navbar-nav .nav-link {
+    color: #353c3f;
+    font-size: 1.5rem;
+  }
 
-    .imageMobile {
-        position: relative;
-        width: 100%;
-        height: 300px;
-    }
+  .Sub-Header {
+    font-size: 3rem;
+  }
 
+  .Mobile-Header {
+    font-size: 4rem;
+  }
 
-    .navbar-light .navbar-brand {
-        font-size: 2rem;
-    }
+  /* toast Attributes */
+  .toast {
+    flex: 0 0 45%;
+    background: #353c3f;
+    font-size: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
-    .navbar-light .navbar-nav .nav-link {
-        color: #353c3f;
-        font-size: 1.5rem;
-    }
+  .toast:not(:last-child) {
+    margin-bottom: 10px;
+  }
 
-    .Sub-Header {
-        font-size: 3rem;
-    }
+  .toast.show {
+    display: block;
+    opacity: 1;
+    margin-bottom: 10px;
+  }
 
-    .Mobile-Header {
-        font-size: 4rem;
-    }
+  .Mobile-box {
+    border-bottom: 1px solid #fcaf17;
+    padding-bottom: 25px;
+  }
 
-
-
-    /* toast Attributes */
-    .toast {
-        flex: 0 0 45%;
-        background: #353c3f;
-        font-size: 2rem;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .toast:not(:last-child) {
-        margin-bottom: 10px;
-    }
-
-    .toast.show {
-        display: block;
-        opacity: 1;
-        margin-bottom: 10px;
-    }
-
-    .Mobile-box {
-        border-bottom: 1px solid #fcaf17;
-        padding-bottom: 25px;
-    }
-
-
-
-    .Mobile-footer {
-        font-size: 1.5rem;
-    }
+  .Mobile-footer {
+    font-size: 1.5rem;
+  }
 }
 
-@media only screen and (width: 812px),
-(width: 768px) {
-    .Card-width {
-        width: 100%;
-    }
+@media only screen and (width: 812px), (width: 768px) {
+  .Card-width {
+    width: 100%;
+  }
 
-    .Mobile-PortfolioImage {
-        height: 800px;
-    }
+  .Mobile-PortfolioImage {
+    height: 800px;
+  }
+  /* toast Attributes */
+  .toast {
+    flex: 0 0 45%;
+    background: #353c3f;
+    font-size: 18px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
+  .toast:not(:last-child) {
+    margin-bottom: 10px;
+  }
 
+  .toast.show {
+    display: block;
+    opacity: 1;
+    margin-bottom: 10px;
+  }
 
-    /* toast Attributes */
-    .toast {
-        flex: 0 0 45%;
-        background: #353c3f;
-        font-size: 18px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .toast:not(:last-child) {
-        margin-bottom: 10px;
-    }
-
-    .toast.show {
-        display: block;
-        opacity: 1;
-        margin-bottom: 10px;
-    }
-
-    .Mobile-box {
-        border-bottom: 1px solid #fcaf17;
-        padding-bottom: 25px;
-    }
-
-
-
+  .Mobile-box {
+    border-bottom: 1px solid #fcaf17;
+    padding-bottom: 25px;
+  }
 }

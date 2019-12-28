@@ -1,5 +1,7 @@
-import React, { Fragment } from 'react';
+import React, { Fragment, useState, useEffect } from 'react';
 import { Toast } from 'react-bootstrap';
+// reactstrap import
+import { Fade } from 'reactstrap';
 
 const Github = () => {
   const Links = [
@@ -27,34 +29,39 @@ const Github = () => {
   const onClick = url => {
     window.open(url);
   };
-
+  const [isOpen, setIsOpen] = useState(false);
+  useEffect(() => {
+    setIsOpen(true);
+  }, []);
   return (
     <Fragment>
-      <header className='Mobile-profile-content'>
-        <div className='Mobile-profile'>
-          <div className='Mobile-Header'>Github</div>
-          <div className='Main-Padding'></div>
-          <div className='Mobile-job'>
-            I would love to have you look at my projects in github.
-          </div>
-        </div>
-      </header>
-      <main className='Mobile-Details-content'>
-        <div className='Sub-Header '>Projects in github</div>
-        <div className='fullPage'>
-          <div className='Mobile-Details'>
-            <div className='Main-Flex'>
-              {Links.map((link, i) => (
-                <Toast key={i}>
-                  <Toast.Body onClick={() => onClick(link.Link)}>
-                    {link.name}
-                  </Toast.Body>
-                </Toast>
-              ))}
+      <Fade in={isOpen}>
+        <header className='Mobile-profile-content'>
+          <div className='Mobile-profile'>
+            <div className='Mobile-Header'>Github</div>
+            <div className='Main-Padding'></div>
+            <div className='Mobile-job'>
+              I would love to have you look at my projects in github.
             </div>
           </div>
-        </div>
-      </main>
+        </header>
+        <main className='Mobile-Details-content'>
+          <div className='Sub-Header '>Projects in github</div>
+          <div className='fullPage'>
+            <div className='Mobile-Details'>
+              <div className='Main-Flex'>
+                {Links.map((link, i) => (
+                  <Toast className='pointer' key={i}>
+                    <Toast.Body onClick={() => onClick(link.Link)}>
+                      {link.name}
+                    </Toast.Body>
+                  </Toast>
+                ))}
+              </div>
+            </div>
+          </div>
+        </main>
+      </Fade>
     </Fragment>
   );
 };
