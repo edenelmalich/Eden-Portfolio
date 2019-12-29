@@ -121,14 +121,29 @@ label {
 }
 
 .icons-container {
-  padding-top: 1rem;
+  width: 100%;
+  margin-top: 1rem;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
   display: flex;
-  flex-wrap: wrap;
+  background: #f8f9fa;
 }
-
+.icon-att {
+  font-size: 2rem;
+}
+#icon-size {
+  font-size: 1.5rem;
+}
+svg {
+  display: flex;
+  align-items: center;
+  color: #231f20;
+  margin-right: 10px;
+  margin-left: 10px;
+}
 #img-size {
   width: 25px;
-  margin-right: 10px;
 }
 
 .Content-Nav {

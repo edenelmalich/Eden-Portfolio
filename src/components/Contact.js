@@ -1,12 +1,13 @@
 import React, { Fragment } from 'react';
 import '../Css/Portfolio.css';
 import { Card, Button } from 'react-bootstrap';
-
+// React icons
+import { FaWhatsapp, FaPhone } from 'react-icons/fa';
 const Contact = () => {
   const onClick = url => {
     window.open(url);
   };
-
+  const phoneNumber = '+972543241787';
   return (
     <Fragment>
       <header className='Mobile-profile-content'>
@@ -43,6 +44,14 @@ const Contact = () => {
                 </Card.Text>
               </Card.Body>
             </Card>
+          </div>
+          <div className='icons-container'>
+            <a className='icon-att' href={`https://wa.me/${phoneNumber}`}>
+              <FaWhatsapp />
+            </a>
+            <a className='icon-att' id='icon-size' href={`tel:${phoneNumber}`}>
+              <FaPhone />
+            </a>
           </div>
         </div>
       </main>
